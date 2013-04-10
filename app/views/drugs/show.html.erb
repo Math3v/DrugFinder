@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @drug.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @drug.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @drug.code %>
+</p>
+
+<p>
+  <b>Sukl name:</b>
+  <%= @drug.sukl_name %>
+</p>
+
+<p>
+  <b>Form:</b>
+  <%= @drug.form %>
+</p>
+
+<p>
+  <b>Label:</b>
+  <%= @drug.label %>
+</p>
+
+<p>
+  <b>Usage:</b>
+  <%= @drug.usage %>
+</p>
+
+<p>
+  <b>Držiteľ:</b>
+  <%= @drug.holder.name_clean if defined? @drug.holder.name_clean %>
+</p>
+
+<p>
+  <b>Dodávateľ:</b>
+  <%= @drug.supplier.name_clean if defined? @drug.supplier.name_clean %>
+</p>
+
+<p>
+  <b>Výrobca:</b>
+  <%= @drug.producer.name_clean if defined? @drug.producer.name_clean %>
+</p>
+
+
+<%= link_to 'Edit', edit_drug_path(@drug) %> |
+<%= link_to 'Destroy', @drug, method: :delete, data: { confirm: 'Are you sure?' } %>  |
+<%= link_to 'Back', root_path %>

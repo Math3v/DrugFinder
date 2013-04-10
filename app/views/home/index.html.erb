@@ -1,0 +1,19 @@
+<% provide(:title, "Domov") %>
+
+<div class="center hero-unit">
+  <h1>DrugFinder</h1>
+
+  <%= form_tag drugs_find_path(:name), :method => 'put' do %>
+
+    <p>
+      <%= text_field(nil, params, :placeholder => 'Toto zatiaľ nefunguje...') %>
+      <%= submit_tag 'Hľadaj', class: "btn btn-large btn-primary" %>
+    </p>
+
+  <% end %>
+
+ </div>
+
+<br>
+  <%= link_to 'Nájdi ABAKTAL', drugs_find_path('ABAKTAL') %>
+<br>

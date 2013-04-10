@@ -1,0 +1,18 @@
+<h1>Aktualizuj liek</h1>
+<%-#= if current_user.admin? %>
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@drugs) do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :usage %>
+      <%= f.text_field :usage %>
+
+      <%= f.submit "Uloz zmeny", class: "btn btn-large btn-primary" %>
+      <% end %>
+  </div>
+</div>
+<%-#= else %>
+<p>Nemáte potrebné práva na aktualizáciu liekov</p>
+<%-# end %>

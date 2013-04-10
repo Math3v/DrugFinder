@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+<%@drug.each do |drug| %>
+    <p>
+      <b>ID:</b>
+      <%= drug.id if defined? drug.id %>
+    </p>
+
+    <p>
+      <b>Meno:</b>
+      <%= drug.name if defined? drug.name %>
+    </p>
+
+    <p>
+      <b>Kód:</b>
+      <%= drug.code if defined? drug.code %>
+    </p>
+
+    <p>
+      <b>ŠÚKL meno:</b>
+      <%= drug.sukl_name if defined? drug.sukl_name %>
+    </p>
+
+    <p>
+      <b>Forma:</b>
+      <%= drug.form if defined? drug.form %>
+    </p>
+
+    <p>
+      <b>Popis:</b>
+      <%= drug.label if defined? drug.label %>
+    </p>
+
+    <p>
+      <b>Ako používať liek? :</b>
+      <%= drug.usage if defined? drug.usage %>
+    </p>
+
+    <p>
+      <b>Držiteľ:</b>
+      <%= drug.holder.name_clean if !drug.holder.nil? %>
+    </p>
+
+    <p>
+      <b>Dodávateľ:</b>
+      <%= drug.supplier.name_clean if !drug.supplier.nil?  %>
+    </p>
+
+    <p>
+      <b>Výrobca:</b>
+      <%= drug.producer.name_clean if !drug.producer.nil? %>
+    </p>
+
+    <p>
+      <% if signed_in? && current_user.admin? %>
+          <%= link_to 'Edit', edit_drug_path(drug) %>  |
+          <%= link_to 'Destroy', drug, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </p>
+
+    ----------------------------------------------------
+    <br>
+<% end %>
+<%= link_to 'Back', root_url %>

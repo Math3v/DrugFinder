@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @holder.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @holder.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_holder_path(@holder) %> |
+<%= link_to 'Back', holders_path %>

@@ -1,0 +1,9 @@
+<h1>Drugs found</h1>
+<p>Find me in app/views/drug/find.html.erb</p>
+<p>Here are your results</p>
+
+<% @drugs.each do |drug| %>
+   <%= drug.id %>.  <%=drug.name %>, <%= drug.producer %><br>
+<% end %>
+
+<p>End of your results</p>

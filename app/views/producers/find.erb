@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'layouts/find_specific' %>
+
+<% @producer.each do |producer| %>
+    <br><br>
+    <p>
+      <b>Id:</b>
+      <%= producer.id %>
+    </p>
+
+    <p>
+      <b>Name:</b>
+      <%= producer.name_clean %>
+    </p>
+
+    <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Edit', edit_producer_path(producer) %> |
+        <%= link_to 'Destroy', '#' %>
+        <br>
+    <% end %>
+
+    <%= link_to 'Zobraziť všetky lieky', producers_show_all_drugs_path(producer.id) %>
+    <br>
+    -------------------------------------------------------
+
+<% end %>
+
+<br>
+
+<%= link_to 'Back', root_path %>

@@ -1,0 +1,40 @@
+<% provide(:title, "Štatistiky")%>
+
+<p>
+<table>
+
+<tr>
+<td>Počet liekov: </td> <td><%= @drugs_count %> </td>
+</tr>
+
+<tr>
+<td>Počet dodávateľov:&nbsp; &nbsp; </td>  <td><%= @suppliers_count %></td>
+</tr>
+
+<tr>
+<td>Počet výrobcov:</td> <td><%= @producers_count %></td>
+</tr>
+
+<tr>
+<td>Počet držiteľov: </td>   <td><%= @holders_count %></td>
+</tr>
+
+<tr>
+<td>Počet liekov, kde možno nájsť dávkovanie: &nbsp; &nbsp; </td> <td><%= @drugs_usage_count %>(<%= (@drugs_usage_count.to_f / @drugs_count.to_f * 100.0).to_i %>%)</td>
+</tr>
+
+<tr>
+<td>Počet liekov, kde možno nájsť popis:</td> <td><%= @drugs_label_count %>(<%= (@drugs_label_count.to_f / @drugs_count.to_f * 100.0).to_i %>%)</td>
+</tr>
+
+<tr>
+  <td>Aktuálny počet používateľov</td> <td><%= @users_count %></td>
+</tr>
+
+</table>
+</p>
+
+<br>
+<br>
+
+<%= link_to 'Domov', root_path %>

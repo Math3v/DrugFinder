@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<% @supplier.each do |supplier| %>
+    <br><br>
+    <p>
+      <b>Id:</b>
+      <%= supplier.id %>
+    </p>
+
+    <p>
+      <b>Name:</b>
+      <%= supplier.name_clean %>
+    </p>
+
+    <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Edit', edit_supplier_path(supplier) %> |
+        <%= link_to 'Destroy', '#' %>
+        <br>
+    <% end %>
+
+    <%= link_to 'Zobraziť všetky lieky', suppliers_show_all_drugs_path(supplier.id) %>
+    <br>
+    -------------------------------------------------------
+
+<% end %>
+
+<br>
+
+<%= link_to 'Back', root_path %>
