@@ -109,8 +109,7 @@ class Drug < ActiveRecord::Base
     end
 
     if parLen == 1 then
-      Drug.where("usage ILIKE '%boles
-%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%'")
+      Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%'")
     elsif parLen == 2 then
       Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%'")
     elsif parLen == 3 then
