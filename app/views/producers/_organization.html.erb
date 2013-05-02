@@ -1,0 +1,27 @@
+<div class="pocetVysledkov">
+  <b>Počet výsledkov:  <%= @producer.count %>&nbsp; &nbsp; &nbsp; <%= link_to 'Naspäť', :back %></b>
+</div>
+
+<% @producer.each do |producer| %>
+
+    <div class="foundResults">
+
+      <div class="cast name">
+        <%= producer.name_clean %>
+      </div>
+
+      <% if signed_in? && current_user.admin? %>
+          <%= link_to 'Edit', edit_producer_path(producer) %> |
+          <%= link_to 'Destroy', '#' %>
+          <br>
+      <% end %>
+      <div class="cast store button" id="storeButton">
+        <%= link_to 'Zobraziť všetky lieky', producers_show_all_drugs_path(producer.id) %>
+      </div>
+
+    </div>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', :back %>
