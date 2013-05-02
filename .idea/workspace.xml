@@ -105,19 +105,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/assets/javascripts/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/assets/stylesheets/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/plugins/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/_body.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/_body.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/drug.rb" afterPath="$PROJECT_DIR$/app/models/drug.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drug_finder_db.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -223,7 +211,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="21" selection-start="599" selection-end="599" vertical-scroll-proportion="0.6643952">
+            <state line="31" column="38" selection-start="850" selection-end="850" vertical-scroll-proportion="0.79216355">
               <folding />
             </state>
           </provider>
@@ -1488,7 +1476,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="21" selection-start="599" selection-end="599" vertical-scroll-proportion="0.6643952">
+        <state line="31" column="38" selection-start="850" selection-end="850" vertical-scroll-proportion="0.79216355">
           <folding />
         </state>
       </provider>
