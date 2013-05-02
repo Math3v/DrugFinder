@@ -91,28 +91,32 @@ class Drug < ActiveRecord::Base
     param_string=[]
 
     while i < parLen
-      param_string[i]="hlav" if params[i].eql? '1'
-      param_string[i]="krk" if params[i].eql? '2'
-      param_string[i]="uch" if (params[i].eql? '14' or params[i].eql? '13')
-      param_string[i]="ramen" if params[i].eql? '4'
-      param_string[i]="hrudn" if params[i].eql? '3'
-      param_string[i]="bruch" if params[i].eql? '7'
-      param_string[i]="ruk" if params[i].eql? '5'
-      param_string[i]="dlan" if params[i].eql? '6'
-      param_string[i]="semenn" if params[i].eql? '8'
-      param_string[i]="stehn" if params[i].eql? '9'
-      param_string[i]="kolen" if params[i].eql? '10'
-      param_string[i]="holen" if params[i].eql? '11'
-      param_string[i]="chodidl" if params[i].eql? '12'
+      param_string[i]="hlav" if params[i].eql? '5'
+      param_string[i]="oka" if params[i].eql? '1'
+      param_string[i]="nos" if params[i].eql? '3'
+      param_string[i]="zub" if params[i].eql? '4'
+      param_string[i]="krk" if params[i].eql? '8'
+      param_string[i]="uch" if params[i].eql? '6'
+      param_string[i]="ramen" if params[i].eql? '9'
+      param_string[i]="hrudn" if params[i].eql? '11'
+      param_string[i]="bruch" if params[i].eql? '16'
+      param_string[i]="ruk" if params[i].eql? '12'
+      param_string[i]="predlakt" if params[i].eql? '14'
+      param_string[i]="dlan" if params[i].eql? '18'
+      param_string[i]="semenn" if params[i].eql? '17'
+      param_string[i]="stehn" if params[i].eql? '20'
+      param_string[i]="kolen" if params[i].eql? '22'
+      param_string[i]="holen" if params[i].eql? '24'
+      param_string[i]="chodidl" if params[i].eql? '26'
 
       i = i + 1
     end
 
-    if parLen == 1 then
+    if parLen == 3 then
       Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%'")
     elsif parLen == 2 then
       Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%'")
-    elsif parLen == 3 then
+    elsif parLen == 1 then
       Drug.where("usage ILIKE '%boles%#{param_string[0]}%' OR label ILIKE '%boles%#{param_string[0]}%'")
     end
   end

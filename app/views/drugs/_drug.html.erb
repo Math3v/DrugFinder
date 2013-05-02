@@ -1,5 +1,11 @@
 <% provide(:title, 'Vyhľadávanie') %>
 
+<%     if signed_in? && current_user.admin?
+         @admin = true
+       else
+         @admin = false
+       end %>
+
 <div class="pocetVysledkov">
 
         <b><h5>Počet výsledkov:  <%= @drug.count if !@drug.nil? %>&nbsp; &nbsp; &nbsp; <%= link_to 'Naspäť', :back %></h5></b>
@@ -84,7 +90,7 @@
           </li>
 
           <p>
-            <% if signed_in? && current_user.admin? %>
+            <% if @admin %>
                 <%= link_to 'Edit', edit_drug_path(drug) %>  |
                 <%= link_to 'Destroy', drug, method: :delete, data: {confirm: 'Are you sure?'} %>
             <% end %>

@@ -29,7 +29,6 @@ class DrugsController < ApplicationController
     @drug = drug_.paginate(page: params[:page])  if !drug_.nil?
 
     @param = ''
-
     respond_to do |format|
       format.html
       format.json {render json: @drug}

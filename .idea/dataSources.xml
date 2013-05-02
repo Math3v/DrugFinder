@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1034210277">
-    <data-source source="LOCAL" name="Rails drug_finder_db: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b4ef0eaa-e95a-4cf1-8d9b-a94ac444c49c">
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:drugdb</jdbc-url>
-      <user-name>matej</user-name>
-      <libraries>
-        <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
-        </library>
-        <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
-        </library>
-      </libraries>
-    </data-source>
+  <component name="DataSourceManagerImpl" format="xml" hash="1572946960">
     <data-source source="LOCAL" name="Rails drug_finder_db: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1d30ee35-6f97-44bb-8c25-1592369856e1">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:drugdb</jdbc-url>
@@ -42,8 +29,9 @@
     </data-source>
     <data-source source="LOCAL" name="Rails drug_finder_db: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="9f6f9cf7-0ac3-43f6-8db7-a16e92f84dae">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:drugdb</jdbc-url>
-      <user-name>matej</user-name>
+      <jdbc-url>jdbc:postgresql://&lt;%=ENV['OPENSHIFT_MYSQL_DB_HOST']%&gt;:&lt;%=ENV['OPENSHIFT_MYSQL_DB_PORT']%&gt;/&lt;%=ENV['OPENSHIFT_APP_NAME']%&gt;</jdbc-url>
+      <user-name>&lt;%=ENV['OPENSHIFT_MYSQL_DB_USERNAME']%&gt;</user-name>
+      <user-password>df96df8fdf97dfefdfe4dffcdff1df8ddfe5dffadfefdfe4dff9dfe2dfe3dfecdffedff5dfe7dff3dff9dffbdfe6dff5dfeedfe8dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8fdf94</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>

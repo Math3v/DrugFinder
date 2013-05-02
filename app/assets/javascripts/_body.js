@@ -16,12 +16,11 @@ $(document).ready(
             event.preventDefault();
             var data = $(this).data('body');
 
-            console.log(data);
 
-            /*if(array_clicks.length >= 3){
+            if(array_clicks.length >= 3){
                 alert("Nemôžete zvoliť viac ako 3 časti tela.");
                 return;
-            }*/
+            }
 
             for(var i = 0; i < array_clicks.length; i++){
                 if(data == array_clicks[i]){
@@ -47,7 +46,6 @@ $(document).ready(
     function(){
 
         $('img[usemap]').maphilight();
-
         $('.submit').live('click', function(ev) {
         var clicks = "";
 
