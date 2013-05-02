@@ -1,15 +1,29 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "DrugFinder", root_url, id: "logo" %>
+      <%#--= link_to "DrugFinder", root_url, id: "logo" %>
+      <!--img src="Medical_Symbol.png", id:-->
       <nav>
         <ul class="nav pull-right">
 
          <li><%= link_to 'Domov', root_path %></li>
-         <li><%= link_to 'Rozšírené vyhľadávanie', '/find_specific' %></li>
+         <li><%= link_to 'Čo Vás bolí ?', '/human_body' %>
+
+          <li id="menu" class="dropdown">
+            <a href="dropdown-menu" class="dropdown-toggle" data-toggle="dropdown">
+              Hľadaj organizácie<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <div class="pomocna">
+                 <li><%= link_to 'Hľadaj výrobcu', '/find_producers' %></li>
+                 <li><%= link_to 'Hľadaj držiteľa', '/find_holders' %></li>
+                 <li><%= link_to 'Hľadaj dodávateľa', '/find_suppliers' %></li>
+              </div>
+            </ul>
+          </li>
              <% if signed_in? && current_user.admin? %>
               <li id="menu" class="dropdown">
-                <a href="dropdown-menu" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="dropdown-menu 2" class="dropdown-toggle" data-toggle="dropdown">
                   Účet<b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">

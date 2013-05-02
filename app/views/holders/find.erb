@@ -1,29 +1,3 @@
 <p id="notice"><%= notice %></p>
 
-<% @holder.each do |holder| %>
-    <br><br>
-<p>
-  <b>Id:</b>
-  <%= holder.id %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= holder.name_clean %>
-</p>
-
-<% if signed_in? && current_user.admin? %>
-    <%= link_to 'Edit', edit_holder_path(holder) %> |
-    <%= link_to 'Destroy', '#' %>
-        <br>
-<% end %>
-
-<%= link_to 'Zobraziť všetky lieky', holders_show_all_drugs_path(holder.id) %>
-<br>
--------------------------------------------------------
-
-<% end %>
-
-<br>
-
-<%= link_to 'Back', root_path %>
+<%= render 'producers/organization' %>

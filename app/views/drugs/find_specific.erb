@@ -1,12 +1,12 @@
-<% provide(:title, 'Rozšírené vyhľadávanie') %>
+<% provide(:title, 'Vyhľadávanie') %>
 
 <div class="center hero-unit">
-  <h1>Rozšírené vyhľadávanie</h1>
+  <img src="assets/ZDRAVIE_green.png" id="zdraviePNG">
 
   <%= form_tag wide_search_drugs_path, method: :get do %>
 
       <p>
-        <%= text_field_tag(:q, '', :placeholder => 'Zadajte názov lieku, výrobcu, dodávateľa, účinnú látku, príznaky, ... (vyhľadávanie môže trvať dlhšie)') %>
+        <%= text_field_tag(:q, '', :placeholder => 'Zadajte názov lieku, účinnú látku, príznaky, ... Príklad: bolesti brucha') %>
         <%= submit_tag 'Hľadaj', class: "btn btn-large btn-primary" %>
       </p>
 

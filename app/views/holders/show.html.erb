@@ -11,5 +11,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_holder_path(@holder) %> |
+<%= link_to 'Edit', edit_holder_path(@holder) %> |  <%= link_to 'Destroy', @holder, method: :delete, data: { confirm: 'Are you sure?' } %> <br>
 <%= link_to 'Back', holders_path %>

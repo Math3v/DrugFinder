@@ -1,0 +1,14 @@
+<% provide(:title, 'Rozšírené vyhľadávanie') %>
+
+<div class="center hero-unit">
+  <h1>Nájdi dodávateľa</h1>
+
+  <%= form_tag find_suppliers_path, method: :get do %>
+
+      <p>
+        <%= text_field_tag(:name, '', :placeholder => 'Zadajte názov organizácie     Príklad: BOIRON') %>
+        <%= submit_tag 'Hľadaj', class: "btn btn-large btn-primary" %>
+      </p>
+
+  <% end %>
+</div>

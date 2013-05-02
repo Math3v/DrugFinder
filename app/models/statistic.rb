@@ -17,6 +17,7 @@ class Statistic < ActiveRecord::Base
     Supplier.all.count
   end
 
+  # @return [Object]
   def self.generate_users_count
     User.count
   end

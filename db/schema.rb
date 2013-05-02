@@ -11,21 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130331124751) do
+ActiveRecord::Schema.define(:version => 20130426173010) do
 
   create_table "drugs", :id => false, :force => true do |t|
-    t.integer "id",                          :null => false
-    t.string  "name",        :limit => 200
-    t.string  "code",        :limit => 200
-    t.string  "sukl_name",   :limit => 200
-    t.string  "form",        :limit => 200
-    t.string  "label",       :limit => 6000
-    t.string  "usage",       :limit => 3500
+    t.integer "id",                            :null => false
+    t.string  "name",          :limit => 200
+    t.string  "code",          :limit => 200
+    t.string  "sukl_name_old", :limit => 200
+    t.string  "label",         :limit => 6000
+    t.string  "usage",         :limit => 3500
     t.boolean "admin"
     t.integer "producer_id"
     t.integer "holder_id"
     t.integer "supplier_id"
+    t.string  "form",          :limit => 200
+    t.string  "sukl_name",     :limit => 400
   end
+
+  add_index "drugs", ["id"], :name => "id_not_null_unique", :unique => true
 
   create_table "holders", :force => true do |t|
     t.string "name",       :limit => 400
@@ -34,6 +37,14 @@ ActiveRecord::Schema.define(:version => 20130331124751) do
 
   add_index "holders", ["id"], :name => "idx_holders_id"
 
+  create_table "pg_search_documents", :force => true do |t|
+    t.text     "content"
+    t.integer  "searchable_id"
+    t.string   "searchable_type"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
   create_table "producers", :force => true do |t|
     t.string "name",       :limit => 400
     t.string "name_clean", :limit => 400
@@ -41,11 +52,22 @@ ActiveRecord::Schema.define(:version => 20130331124751) do
 
   add_index "producers", ["id"], :name => "idx_producers_id"
 
+  create_table "searchers", :id => false, :force => true do |t|
+    t.integer "id",                 :null => false
+    t.string  "name", :limit => 20
+  end
+
   create_table "suppliers", :force => true do |t|
     t.string "name",       :limit => 400
     t.string "name_clean", :limit => 400
   end
 
   add_index "suppliers", ["id"], :name => "idx_suppliers_id"
+
+  create_table "users", :force => true do |t|
+    t.string  "name",           :limit => 20
+    t.boolean "admin"
+    t.integer "remember_token"
+  end
 
 end

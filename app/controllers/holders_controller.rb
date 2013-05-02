@@ -1,11 +1,12 @@
 class HoldersController < ApplicationController
 
   def find
-    @holder = Holder.find_holders_like_name params[:name]
+    @producer = Holder.find_holders_like_name params[:name]
   end
 
   def show_all
-    @drug = Holder.find_by_holder_id params[:id]
+    drug_ = Holder.find_by_holder_id params[:id]
+    @drug = drug_.paginate(page: params[:page])
   end
 
   # GET /holders

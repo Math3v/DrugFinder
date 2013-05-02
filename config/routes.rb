@@ -1,15 +1,25 @@
 DrugFinderDb::Application.routes.draw do
   resources :statistics
   resources :users
-  resources :suppliers
-  resources :holders
-  resources :producers
-  resources :drugs
+  resources :suppliers  do
+     get :find, on: :collection
+  end
+  resources :holders do
+    get :find, on: :collection
+  end
+  resources :producers  do
+    get :find, on: :collection
+  end
   resources :sessions, only: [:new, :create, :destroy]
+  resources :drugs do
+    get :search, on: :collection
+    get :wide_search, on: :collection
+    get :body_clicked_search, on: :collection
+  end
 
-  root :to => 'home#index'
+  root :to => 'drugs#find_specific'
 
-  match 'drugs/:name/find'     =>  'drugs#find',                      :as => 'drugs_find'
+  #match 'drugs/:name/find'     =>  'drugs#find',                      :as => 'drugs_find'
   match 'holders/:name/find'   =>  'holders#find',                    :as => 'holders_find'
   match 'holders/:id/drugs'    =>  'holders#show_all',                :as => 'holders_show_all_drugs'
   match 'suppliers/:name/find' =>  'suppliers#find',                  :as => 'suppliers_find'
@@ -20,8 +30,12 @@ DrugFinderDb::Application.routes.draw do
   match '/signout',            to: 'sessions#destroy',                via: :delete
   match '/about',              to: 'static_pages#about'
   match '/contact',            to: 'static_pages#contact'
-  match '/find_specific',      to: 'static_pages#find_specific'
+  match '/find_specific',      to: 'drugs#find_specific'
   match '/stats',              to: 'statistics#stats'
+  match '/find_producers',     to: 'producers#find_producers'
+  match '/find_suppliers',     to: 'suppliers#find_suppliers'
+  match '/find_holders',       to: 'holders#find_holders'
+  match '/human_body',         to: 'static_pages#body'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

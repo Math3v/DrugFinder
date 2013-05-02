@@ -1,15 +1,72 @@
 class DrugsController < ApplicationController
 
+  def wide_search
+    if params[:q].nil? then alert[:error] = 'Cannot be empty'  end
+    # Original
+    #drug_ = Drug.find_drugs_like(params[:q])
+    #@drug = drug_.paginate(page: params[:page])
+
+    # PG_Search
+    drug_ = Drug.includes(:supplier, :holder, :producer).search_by_more_attr(params[:q])
+    @drug = drug_.paginate(page: params[:page])
+
+    # Texticle
+    #drug_ = Drug.includes(:supplier, :holder, :producer).search_by_more_attr_texticle(params[:q])
+    #@drug = drug_.paginate(page: params[:page])
+
+    @param = params[:q]
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @drug }
+    end
+
+    return @drug, @param
+  end
+
+  def body_clicked_search
+    drug_ =  Drug.includes(:supplier, :holder, :producer).find_drugs_by_clicks(params[:q])
+    @drug = drug_.paginate(page: params[:page])  if !drug_.nil?
+
+    @param = ''
+
+    respond_to do |format|
+      format.html
+      format.json {render json: @drug}
+    end
+    return @drug, @param
+  end
+
+  # GET /search
+  def search
+    if params[:q].nil? then alert[:error] = 'Cannot be empty'  end
+    drug_ = Drug.find_drugs_like_name params[:q]
+    @drug = drug_.paginate(page: params[:page])
+    @param = params[:q]
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @drug }
+    end
+
+    return @drug, @param
+  end
+
   # GET /find
   def find
     drug_name = Drug.find_drugs_like_name params[:name]
     @drug = drug_name
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @drug }
+    end
   end
 
   # GET /drugs
   # GET /drugs.json
   def index
-    @drugs = Drug.all
+    @drug = Drug.all
 
     respond_to do |format|
       format.html # index.html.erb

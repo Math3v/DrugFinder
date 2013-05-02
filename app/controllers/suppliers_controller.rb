@@ -1,11 +1,12 @@
 class SuppliersController < ApplicationController
 
   def find
-    @supplier = Supplier.find_supplier_like_name params[:name]
+    @producer = Supplier.find_supplier_like_name params[:name]
   end
 
   def show_all
-    @drug = Supplier.find_by_supplier_id params[:id]
+    drug_ = Supplier.find_by_supplier_id params[:id]
+    @drug = drug_.paginate(page: params[:page])
   end
 
   # GET /suppliers

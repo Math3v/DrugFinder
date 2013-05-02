@@ -1,11 +1,12 @@
 class ProducersController < ApplicationController
 
   def find
-    @producer = Producer.find_producers_like_name params[:name]
+    @producer = Producer.find_producers_like_name params[:producer_name]
   end
 
   def show_all
-    @drug = Producer.find_by_producer_id params[:id]
+    drug_ = Producer.find_by_producer_id params[:id]
+    @drug = drug_.paginate(page: params[:page])
   end
   # GET /producers
   # GET /producers.json

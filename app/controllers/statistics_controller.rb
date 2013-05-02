@@ -1,5 +1,7 @@
 class StatisticsController < ApplicationController
 
+  caches_action :stats, expire: 1.day
+
   def stats
     @drugs_count          = Statistic.generate_drugs_count
     @suppliers_count      = Statistic.generate_suppliers_count
