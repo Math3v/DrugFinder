@@ -107,59 +107,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/plugins/.gitkeep" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/_body.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/_body.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/_drug.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/_drug.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/holders/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/holders/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/producers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/producers/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/suppliers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/suppliers/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/body_clicked_search.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/body_clicked_search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/dropdown.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/dropdown.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/drug.rb" afterPath="$PROJECT_DIR$/app/models/drug.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/drug_finder_db.iml" afterPath="$PROJECT_DIR$/.idea/drug_finder_db.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/drugs_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/drugs_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/holders/find.erb" afterPath="$PROJECT_DIR$/app/views/holders/find.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/producers/find.erb" afterPath="$PROJECT_DIR$/app/views/producers/find.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/suppliers/find.erb" afterPath="$PROJECT_DIR$/app/views/suppliers/find.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/holders/find_holders.html.erb" afterPath="$PROJECT_DIR$/app/views/holders/find_holders.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/find_specific.erb" afterPath="$PROJECT_DIR$/app/views/drugs/find_specific.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/suppliers/find_suppliers.html.erb" afterPath="$PROJECT_DIR$/app/views/suppliers/find_suppliers.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/highlight.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/highlight.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/holders_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/holders_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/holders_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/holders_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/holders/new.html.erb" afterPath="$PROJECT_DIR$/app/views/holders/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/producers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/producers/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/suppliers/new.html.erb" afterPath="$PROJECT_DIR$/app/views/suppliers/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/producers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/producers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/producers_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/producers_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/search.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/search_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/search_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/holders/show.html.erb" afterPath="$PROJECT_DIR$/app/views/holders/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/holders/show_all.erb" afterPath="$PROJECT_DIR$/app/views/holders/show_all.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/producers/show_all.erb" afterPath="$PROJECT_DIR$/app/views/producers/show_all.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/suppliers/show_all.erb" afterPath="$PROJECT_DIR$/app/views/suppliers/show_all.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/statistic.rb" afterPath="$PROJECT_DIR$/app/models/statistic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/statistics_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/statistics_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/statistics_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/statistics_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statistics/stats.erb" afterPath="$PROJECT_DIR$/app/views/statistics/stats.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ext/string.rb" afterPath="$PROJECT_DIR$/lib/ext/string.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/suppliers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/suppliers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/suppliers_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/suppliers_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/users_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/users_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drug_finder_db.iws" />
@@ -167,8 +120,8 @@
     <file path="/show.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365842385024" ignored="false" />
     <file path="/index.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367050459171" ignored="false" />
     <file path="/find.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1364995879496" ignored="false" />
-    <file path="/drugs_controller.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367264143648" ignored="false" />
-    <file path="/drug.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367489953550" ignored="false" />
+    <file path="/drugs_controller.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367495712758" ignored="false" />
+    <file path="/drug.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367496892297" ignored="false" />
     <file path="/routes.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367012347311" ignored="false" />
     <file path="/find.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367255822069" ignored="false" />
     <file path="/Dummy.txt" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367489749000" ignored="false" />
@@ -208,7 +161,7 @@
     <file path="/highlight.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366056115141" ignored="false" />
     <file path="/Passer.rb.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365685184581" ignored="false" />
     <file path="/Passer.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365685430039" ignored="false" />
-    <file path="/Gemfile" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365771747564" ignored="false" />
+    <file path="/Gemfile" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367495828080" ignored="false" />
     <file path="/dropdown.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366018026146" ignored="false" />
     <file path="/show_all.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365954314805" ignored="false" />
     <file path="/wide_search.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366057045058" ignored="false" />
@@ -247,7 +200,7 @@
       <file leaf-file-name="drugs_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="14" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
+            <state line="13" column="57" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -256,7 +209,16 @@
       <file leaf-file-name="drug.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="37" selection-start="3173" selection-end="3173" vertical-scroll-proportion="0.68781304">
+            <state line="36" column="17" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.41666666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="110" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -308,7 +270,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/rails_extensions.rb" />
         <option value="$PROJECT_DIR$/app/views/statistics/stats.erb" />
         <option value="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
@@ -321,6 +282,7 @@
         <option value="$PROJECT_DIR$/app/controllers/holders_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/_body.js" />
         <option value="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/drug.rb" />
       </list>
@@ -804,6 +766,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -1282,13 +1266,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1512158" sideWeight="0.99837136" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1512158" sideWeight="0.99837136" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39719626" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1369,11 +1353,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/suppliers_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/holders_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="13" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" />
@@ -1438,13 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="14" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1452,9 +1424,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="110" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="57" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/drug.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="37" selection-start="3173" selection-end="3173" vertical-scroll-proportion="0.68781304">
+        <state line="36" column="17" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.41666666">
           <folding />
         </state>
       </provider>

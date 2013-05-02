@@ -7,12 +7,12 @@ class DrugsController < ApplicationController
     #@drug = drug_.paginate(page: params[:page])
 
     # PG_Search
-    drug_ = Drug.includes(:supplier, :holder, :producer).search_by_more_attr(params[:q])
-    @drug = drug_.paginate(page: params[:page])
+    #drug_ = Drug.includes(:supplier, :holder, :producer).search_by_more_attr(params[:q])
+    #@drug = drug_.paginate(page: params[:page])
 
     # Texticle
-    #drug_ = Drug.includes(:supplier, :holder, :producer).search_by_more_attr_texticle(params[:q])
-    #@drug = drug_.paginate(page: params[:page])
+    drug_ = Drug.search_by_more_attr_texticle(params[:q]).includes(:supplier, :holder, :producer)
+    @drug = drug_.paginate(page: params[:page])
 
     @param = params[:q]
 

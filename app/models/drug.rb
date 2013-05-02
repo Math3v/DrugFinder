@@ -24,16 +24,26 @@ class Drug < ActiveRecord::Base
   belongs_to :holder
 
   # pg_search gem
-  include PgSearch
+  #include PgSearch
   #pg_search_scope :search_by_more_attr, :against => :name
-  pg_search_scope :search_by_more_attr, :against => {:name => 'A', :label => 'C', :usage => 'B', :form => 'D'}, :using => [:tsearch]
-  pg_search_scope :search_by_clicks, :against => {:label => 'A', :usage => 'B'}, :using => [:tsearch]
+  #pg_search_scope :search_by_more_attr, :against => {:name => 'A', :label => 'C', :usage => 'B', :form => 'D'}, :using => [:tsearch]
+  #pg_search_scope :search_by_clicks, :against => {:label => 'A', :usage => 'B'}, :using => [:tsearch]
 
   scope :recent_u, order("updated_at desc").limit(3) # In controller use: Drug.recent_u to see recent updated drugs
   scope :recent_c, order("created_at desc").limit(3) # In controller use: Drug.recent_a to see recent created drugs
 
   # Texticle
-  scope :search_by_more_attr_texticle, lambda { |query| search_by_name_or_by_form_or_by_label_or_by_usage(query, query) }
+  #scope :search_by_more_attr_texticle, lambda { |query| search_by_name_or_by_form_or_by_label_or_by_usage(query, query) }
+
+  def self.searchable_language
+    'unaccent_simple'
+  end
+
+  def self.search_by_more_attr_texticle(query)
+    params = { name: query, label: query, form: query, usage: query }
+    should_be_exclusive = false
+    basic_search(params, should_be_exclusive)
+  end
 
   def self.find_drugs_like_name name
    Drug.where(["name ILIKE ?","#{name}%"])
@@ -99,7 +109,8 @@ class Drug < ActiveRecord::Base
     end
 
     if parLen == 1 then
-      Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%'")
+      Drug.where("usage ILIKE '%boles
+%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%'")
     elsif parLen == 2 then
       Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%'")
     elsif parLen == 3 then

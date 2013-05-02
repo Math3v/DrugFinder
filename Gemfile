@@ -8,8 +8,8 @@ gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'turbolinks'
-gem 'pg_search'
-gem 'texticle', "2.0", :require => 'texticle/rails'
+#gem 'textacular', :require => 'textacular/rails'
+gem 'textacular', require: 'textacular/rails', github: 'jeremyruppel/textacular', branch: 'fix-search-includes'
 #gem 'thinking-sphinx', '~> 3.0.2'
 
 # Bundle edge Rails instead:
