@@ -29,8 +29,8 @@
     </data-source>
     <data-source source="LOCAL" name="Rails drug_finder_db: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="9f6f9cf7-0ac3-43f6-8db7-a16e92f84dae">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://&lt;%=ENV['OPENSHIFT_POSTGRESQL_DB_HOST']%&gt;:&lt;%=ENV['OPENSHIFT_POSTGRESQL_DB_PORT']%&gt;/&lt;%=ENV['OPENSHIFT_APP_NAME']%&gt;</jdbc-url>
-      <user-name>&lt;%=ENV['OPENSHIFT_POSTGRESQL_DB_USERNAME']%&gt;</user-name>
+      <jdbc-url>jdbc:postgresql:drugdb</jdbc-url>
+      <user-name>matej</user-name>
       <user-password>df96df8fdf97dfefdfe4dffcdff1df8ddfe5dffadfefdfe4dff9dfe2dfe3dfecdffedff5dffadfe5dff9dffedfeddff8dfefdff9dffbdfe6dff5dfeedfe8dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8fdf94</user-password>
       <libraries>
         <library>

@@ -22,6 +22,7 @@ class Drug < ActiveRecord::Base
   belongs_to :supplier
   belongs_to :producer
   belongs_to :holder
+  belongs_to :click
 
   # pg_search gem
   #include PgSearch
@@ -89,6 +90,7 @@ class Drug < ActiveRecord::Base
     parLen = params.length
     i = 0
     param_string=[]
+    str_to_exec = "%"
 
     while i < parLen
       param_string[i]="hlav" if params[i].eql? '5'
@@ -109,16 +111,13 @@ class Drug < ActiveRecord::Base
       param_string[i]="holen" if params[i].eql? '24'
       param_string[i]="chodidl" if params[i].eql? '26'
 
+      str_to_exec += param_string[i] + "%"
       i = i + 1
     end
 
-    if parLen == 3 then
-      Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%#{param_string[2]}%'")
-    elsif parLen == 2 then
-      Drug.where("usage ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%' OR label ILIKE '%boles%#{param_string[0]}%#{param_string[1]}%'")
-    elsif parLen == 1 then
-      Drug.where("usage ILIKE '%boles%#{param_string[0]}%' OR label ILIKE '%boles%#{param_string[0]}%'")
-    end
+    # SQL Select
+    Drug.select("DISTINCT(drugs.name), drugs.*").where("label ILIKE '#{str_to_exec}' OR usage ILIKE '#{str_to_exec}'").order("drugs.name")
+
   end
 
 end

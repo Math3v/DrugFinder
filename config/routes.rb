@@ -19,7 +19,6 @@ DrugFinderDb::Application.routes.draw do
 
   root :to => 'drugs#find_specific'
 
-  #match 'drugs/:name/find'     =>  'drugs#find',                      :as => 'drugs_find'
   match 'holders/:name/find'   =>  'holders#find',                    :as => 'holders_find'
   match 'holders/:id/drugs'    =>  'holders#show_all',                :as => 'holders_show_all_drugs'
   match 'suppliers/:name/find' =>  'suppliers#find',                  :as => 'suppliers_find'
@@ -36,6 +35,7 @@ DrugFinderDb::Application.routes.draw do
   match '/find_suppliers',     to: 'suppliers#find_suppliers'
   match '/find_holders',       to: 'holders#find_holders'
   match '/human_body',         to: 'static_pages#body'
+  match '/clicks/:id',          to: 'clicks#incr_clicks',              via: :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

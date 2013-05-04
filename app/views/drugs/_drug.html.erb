@@ -105,7 +105,7 @@
              @site_url="http://eshop.zdravmat.sk/vyhladavanie?orderby=position&orderway=desc&search_query=".concat(@drug_name) %>
 
           <p class="cast store button" id="storeButton">
-            <%= link_to('Koľko stojí '.concat(@drug_name).concat(" ?"), "#{@site_url}") %>
+            <%= link_to('Koľko stojí '.concat(@drug_name).concat(" ?"), "#{@site_url}", :onclick => "incr_clicks(#{drug.id})" )%>
           </p>
 
         </div>
