@@ -48,7 +48,6 @@ $(document).ready(
         $('img[usemap]').maphilight();
         $('.submit').live('click', function(ev) {
         var clicks = "";
-
         for(var i = 0; i < array_clicks.length; i++){
             if(i == (array_clicks.length -1)){
                 clicks = clicks + "q[]=" + array_clicks[i]
@@ -58,11 +57,16 @@ $(document).ready(
             }
         };
 
+        if(array_clicks.length < 1){
+            alert("Musíte kliknúť na obrázok!");
+            return;
+        }
+
         $.ajax({
-                type: "GET",
-                url: "/drugs/body_clicked_search?".concat(clicks),
-                success: window.location.href = "/drugs/body_clicked_search?" + clicks
-            });
+            type: "GET",
+            url: "/drugs/body_clicked_search?".concat(clicks),
+            success: window.location.href = "/drugs/body_clicked_search?" + clicks
+        });
 
     });
 

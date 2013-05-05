@@ -1,3 +1,10 @@
+# == Schema Information
+#
+# Table name: statistics
+#
+#  id :integer          not null
+#
+
 class Statistic < ActiveRecord::Base
   # attr_accessible :title, :body
 

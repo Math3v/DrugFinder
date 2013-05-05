@@ -2,15 +2,8 @@ class DrugsController < ApplicationController
 
   def wide_search
     if params[:q].nil? then alert[:error] = 'Cannot be empty'  end
-    # Original
-    #drug_ = Drug.find_drugs_like(params[:q])
-    #@drug = drug_.paginate(page: params[:page])
 
-    # PG_Search
-    #drug_ = Drug.includes(:supplier, :holder, :producer).search_by_more_attr(params[:q])
-    #@drug = drug_.paginate(page: params[:page])
-
-    # Texticle
+    # Textacular
     drug_ = Drug.search_by_more_attr_texticle(params[:q]).includes(:supplier, :holder, :producer)
     @drug = drug_.paginate(page: params[:page])
 
@@ -27,6 +20,10 @@ class DrugsController < ApplicationController
   def body_clicked_search
     drug_ =  Drug.includes(:supplier, :holder, :producer).find_drugs_by_clicks(params[:q])
     @drug = drug_.paginate(page: params[:page])  if !drug_.nil?
+
+    #@drug = Drug.includes(:supplier, :holder, :producer).paginate_by_sql(
+    # Drug.generate_sql_from_clicks(params[:q]), :page => params[:page], :per_page => 15)
+
 
     @param = ''
     respond_to do |format|

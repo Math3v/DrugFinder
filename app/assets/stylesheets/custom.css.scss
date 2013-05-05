@@ -39,6 +39,7 @@ textarea {
   }
 }
 
+ /* _drug  */
 .pocetVysledkov {
   border-radius: 20px;
   background-color: #a9d75b;
@@ -135,9 +136,9 @@ textarea {
     top:1px;
   }
 
+ /* human body */
 #humanBodyPicture {
 
-  display: block;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
@@ -197,6 +198,7 @@ p {
   align: center;
   width: 70%;
   height: 70%;
+
 }
 
 #body_heading {
@@ -219,12 +221,14 @@ p {
   background: #11cd3d !important;
   color: black !important;
 }
+
 .navbar-inner container{
   font-family: arial;
   font-size: 20px;
   background: #11cd3d !important;
   color: black !important;
 }
+
 .navbar{
   font-family: arial;
   font-size: 20px;
