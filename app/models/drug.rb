@@ -38,28 +38,30 @@ class Drug < ActiveRecord::Base
     parlen = params.length
     i = 0
     param_string=[]
-    str_to_exec = '%bolesti%'
+    str_to_exec = '%bolest_%('
 
     while i < parlen
-      param_string[i]='hlav' if params[i].eql? '5'
-      param_string[i]='oci' if params[i].eql? '1'
-      param_string[i]='nos' if params[i].eql? '3'
-      param_string[i]='zub' if params[i].eql? '4'
-      param_string[i]='krk' if params[i].eql? '8'
-      param_string[i]='uch' if params[i].eql? '6'
-      param_string[i]='ramen' if params[i].eql? '9'
-      param_string[i]='hrudn' if params[i].eql? '11'
-      param_string[i]='bruch' if params[i].eql? '16'
-      param_string[i]='ruk' if params[i].eql? '12'
-      param_string[i]='predlakt' if params[i].eql? '14'
-      param_string[i]='dlan' if params[i].eql? '18'
-      param_string[i]='semenn' if params[i].eql? '17'
-      param_string[i]='stehn' if params[i].eql? '20'
-      param_string[i]='kolen' if params[i].eql? '22'
-      param_string[i]='noh' if params[i].eql? '24'
-      param_string[i]='chodidl' if params[i].eql? '26'
+      param_string[i]='\mhlav_\M|\ml_cn|\ml_c\M' if params[i].eql? '5'
+      param_string[i]='\mo_i\M|\mo__\M|\moka\M|\mvie_ok|\mvie_ku' if params[i].eql? '1'
+      param_string[i]='\mnos_\M|\mnozdier\M' if params[i].eql? '3'
+      param_string[i]='\mzubov\M|\mzub\M|\mjazyk_\M|\mjazyk\M|\mmandl_\M' if params[i].eql? '4'
+      param_string[i]='\mkrk\M|\mmandl_\M|\mkr_n|\mpa_er_ka' if params[i].eql? '8'
+      param_string[i]='\mucha\M|\mu_i\M|mu__\M' if params[i].eql? '6'
+      param_string[i]='\mramen|\mramien\M' if params[i].eql? '9'
+      param_string[i]='\mhrudn|\mprsia|\mbradav|\msrdc' if params[i].eql? '11'
+      param_string[i]='\mbruch|\mbru_n|\m_al_do' if params[i].eql? '16'
+      param_string[i]='\msvalov' if params[i].eql? '12'
+      param_string[i]='\msvalov' if params[i].eql? '14'
+      param_string[i]='\mdlan' if params[i].eql? '18'
+      param_string[i]='\msemenn|\mpenis|\mvaje_n_k|\mmie_ka\M|\mmie_ok\M' if params[i].eql? '17'
+      param_string[i]='\mstehn|\mstehenn|\mstehien|\msvalov' if params[i].eql? '20'
+      param_string[i]='\mkolen|\mkolien' if params[i].eql? '22'
+      param_string[i]='\mn_h\M|\mp___ala\M|\mp____aly\M' if params[i].eql? '24'
+      param_string[i]='\mchodidl|\mchodidiel' if params[i].eql? '26'
 
-      str_to_exec += param_string[i] + '%'
+      str_to_exec += param_string[i]
+      str_to_exec += '|' if i < (parlen - 1)
+      str_to_exec += ')%'
       i = i + 1
     end
 
@@ -71,7 +73,7 @@ class Drug < ActiveRecord::Base
     str_to_exec = generate_string_to_execute(params)
 
     # SQL Select
-    inner = Drug.joins('JOIN clicks ON (clicks.drug_id = drugs.id)').where("label ILIKE '#{str_to_exec}' OR usage ILIKE '#{str_to_exec}'").order('clicks.no_of_clicks DESC').to_sql
+    inner = Drug.joins('JOIN clicks ON (clicks.drug_id = drugs.id)').where("label SIMILAR TO '#{str_to_exec}' OR usage SIMILAR TO '#{str_to_exec}'").order('clicks.no_of_clicks DESC').to_sql
     sql = "SELECT DISTINCT ON (tmp.name) * FROM (#{inner}) as tmp"
 
     return sql
@@ -82,8 +84,8 @@ class Drug < ActiveRecord::Base
     str_to_exec = generate_string_to_execute(params)
 
     # SQL Select
-    Drug.select('DISTINCT ON (drugs.name) drugs.*').joins('JOIN clicks ON clicks.drug_id = drugs.id')
-      .where("label ILIKE '#{str_to_exec}' OR usage ILIKE '#{str_to_exec}'")
+    Drug.joins('JOIN clicks ON clicks.drug_id = drugs.id')
+      .where('label SIMILAR TO ? OR usage SIMILAR TO ?', str_to_exec, str_to_exec).order('clicks.no_of_clicks DESC')
   end
 
 end

@@ -13,7 +13,29 @@
 
 ActiveRecord::Schema.define(:version => 20130502120525) do
 
+  create_table "clicks", :id => false, :force => true do |t|
+    t.string  "name",         :limit => 200
+    t.integer "drug_id"
+    t.integer "no_of_clicks", :limit => 8
+  end
+
+  add_index "clicks", ["drug_id"], :name => "clicks_idx"
+
   create_table "drugs", :id => false, :force => true do |t|
+    t.string  "name",        :limit => 200
+    t.integer "id"
+    t.string  "code",        :limit => 200
+    t.string  "label",       :limit => 6000
+    t.string  "usage",       :limit => 3500
+    t.boolean "admin"
+    t.integer "producer_id"
+    t.integer "holder_id"
+    t.integer "supplier_id"
+    t.string  "form",        :limit => 200
+    t.string  "sukl_name",   :limit => 400
+  end
+
+  create_table "drugs_", :id => false, :force => true do |t|
     t.integer "id",                            :null => false
     t.string  "name",          :limit => 200
     t.string  "code",          :limit => 200
@@ -28,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20130502120525) do
     t.string  "sukl_name",     :limit => 400
   end
 
-  add_index "drugs", ["id"], :name => "id_not_null_unique", :unique => true
+  add_index "drugs_", ["id"], :name => "id_not_null_unique", :unique => true
 
   create_table "holders", :force => true do |t|
     t.string "name",       :limit => 400

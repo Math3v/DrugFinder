@@ -21,9 +21,7 @@ class DrugsController < ApplicationController
     drug_ =  Drug.includes(:supplier, :holder, :producer).find_drugs_by_clicks(params[:q])
     @drug = drug_.paginate(page: params[:page])  if !drug_.nil?
 
-    #@drug = Drug.includes(:supplier, :holder, :producer).paginate_by_sql(
-    # Drug.generate_sql_from_clicks(params[:q]), :page => params[:page], :per_page => 15)
-
+    #@drug = Drug.paginate_by_sql(Drug.generate_sql_from_clicks(params[:q]), :page => params[:page], :per_page => 15)
 
     @param = ''
     respond_to do |format|

@@ -8,7 +8,7 @@
 
 <div class="pocetVysledkov">
 
-        <b><h5>Počet výsledkov:  <%= @drug.count if !@drug.nil? %>&nbsp; &nbsp; &nbsp; <%= link_to 'Naspäť', :back %></h5></b>
+        <b><h5>Počet výsledkov:  <%= @drug.total_entries if !@drug.nil? %>&nbsp; &nbsp; &nbsp; <%= link_to 'Naspäť', :back %></h5></b>
         <p><b><%= @param %></b></p>
 
 </div>
