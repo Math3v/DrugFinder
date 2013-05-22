@@ -15,10 +15,12 @@ DrugFinderDb::Application.routes.draw do
     get :search, on: :collection
     get :wide_search, on: :collection
     get :body_clicked_search, on: :collection
+    get :show, on: :collection
   end
 
-  root :to => 'drugs#find_specific'
+  root :to => 'home#index'
 
+  match '/drugs/:id'           =>  'drugs#show',                      via: :get
   match 'holders/:name/find'   =>  'holders#find',                    :as => 'holders_find'
   match 'holders/:id/drugs'    =>  'holders#show_all',                :as => 'holders_show_all_drugs'
   match 'suppliers/:name/find' =>  'suppliers#find',                  :as => 'suppliers_find'
@@ -29,13 +31,13 @@ DrugFinderDb::Application.routes.draw do
   match '/signout',            to: 'sessions#destroy',                via: :delete
   match '/about',              to: 'static_pages#about'
   match '/contact',            to: 'static_pages#contact'
-  match '/find_specific',      to: 'drugs#find_specific'
+  match '/find_specific',      to: 'home#findSpecific'
   match '/stats',              to: 'statistics#stats'
   match '/find_producers',     to: 'producers#find_producers'
   match '/find_suppliers',     to: 'suppliers#find_suppliers'
   match '/find_holders',       to: 'holders#find_holders'
   match '/human_body',         to: 'static_pages#body'
-  match '/clicks/:id',          to: 'clicks#incr_clicks',              via: :post
+  match '/clicks/:id',         to: 'clicks#incr_clicks',              via: :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

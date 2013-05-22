@@ -2,11 +2,13 @@
 
 <div class="row">
   <div class="span6 offset3">
-    <h3>Zadajte používateľské meno</h3>
     <%= form_for(:session, url: sessions_path) do |f| %>
        
-      <%= f.label :Meno %>
+      <%= f.label :Meno, 'Meno' %>
       <%= f.text_field :name %>
+
+      <%= f.label :password, 'Heslo' %>
+      <%= f.password_field :password %>
 
       <%= f.submit 'Prihlásiť', class: "btn btn-large btn-primary" %>
     <% end %>

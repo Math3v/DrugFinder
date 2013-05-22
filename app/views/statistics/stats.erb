@@ -1,31 +1,37 @@
-<% provide(:title, "Štatistiky")%>
+<% provide(:title, "Štatistiky") %>
 <h1>Štatistiky</h1>
 
 <table>
 
-<tr>
-    <td>Počet liekov: </td> <td><%= @drugs_count %> </td>
-</tr>
+  <tr>
+    <td>Počet liekov:</td>
+    <td><%= @drugs_count %> </td>
+  </tr>
 
-<tr>
-    <td>Počet dodávateľov:&nbsp; &nbsp; </td>  <td><%= @suppliers_count %></td>
-</tr>
+  <tr>
+    <td>Počet dodávateľov:&nbsp; &nbsp; </td>
+    <td><%= @suppliers_count %></td>
+  </tr>
 
-<tr>
-    <td>Počet výrobcov:</td> <td><%= @producers_count %></td>
-</tr>
+  <tr>
+    <td>Počet výrobcov:</td>
+    <td><%= @producers_count %></td>
+  </tr>
 
-<tr>
-    <td>Počet držiteľov: </td>   <td><%= @holders_count %></td>
-</tr>
+  <tr>
+    <td>Počet držiteľov:</td>
+    <td><%= @holders_count %></td>
+  </tr>
 
-<tr>
-    <td>Počet liekov, kde možno nájsť dávkovanie: &nbsp; &nbsp; </td> <td><%= @drugs_usage_count %>(<%= (@drugs_usage_count.to_f / @drugs_count.to_f * 100.0).to_i %>%)</td>
-</tr>
+  <tr>
+    <td>Počet liekov, kde možno nájsť dávkovanie: &nbsp; &nbsp; </td>
+    <td><%= @drugs_usage_count %>(<%= (@drugs_usage_count.to_f / @drugs_count.to_f * 100.0).to_i %>%)</td>
+  </tr>
 
-<tr>
-    <td>Počet liekov, kde možno nájsť popis:</td> <td><%= @drugs_label_count %>(<%= (@drugs_label_count.to_f / @drugs_count.to_f * 100.0).to_i %>%)</td>
-</tr>
+  <tr>
+    <td>Počet liekov, kde možno nájsť popis:</td>
+    <td><%= @drugs_label_count %>(<%= (@drugs_label_count.to_f / @drugs_count.to_f * 100.0).to_i %>%)</td>
+  </tr>
 
 </table>
 

@@ -181,6 +181,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: black;
 }
 
 h2 {
@@ -200,9 +201,16 @@ p {
 #zdraviePNG{
 
   align: center;
-  width: 70%;
-  height: 70%;
+  padding: 20px;
+  width: 50%;
+  height: 20%;
 
+}
+
+.home_search_input {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 #body_heading {
@@ -246,6 +254,7 @@ p {
 
 .center.hero-unit {
   background-color: white;
+  text-align: center;
 }
 
 .btn {

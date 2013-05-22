@@ -12,11 +12,11 @@ class Holder < ActiveRecord::Base
   has_many :drugs
 
   def self.find_holders_like_name name
-      Holder.where(["name_clean ILIKE ?", "#{name}%"])
+    Holder.where(["name_clean ILIKE ?", "#{name}%"])
   end
 
-def self.find_by_holder_id id
-  Drug.where("holder_id = ?", "#{id}")
-end
+  def self.find_by_holder_id id
+    Drug.where("holder_id = ?", "#{id}")
+  end
 
 end

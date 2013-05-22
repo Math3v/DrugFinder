@@ -33,7 +33,7 @@ describe "StaticPages" do
   describe "Signin page" do
     it "should have the content 'Zadajte'" do
       visit '/signin'
-      page.should have_content('Zadajte')
+      page.should have_content('Meno')
     end
   end
 

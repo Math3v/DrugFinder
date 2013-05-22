@@ -16,3 +16,10 @@
 //= require bootstrap
 //= require dropdown
 //= require drug
+
+
+$(function() {
+   $('.home_search_input').tokenInput('/drugs.json', {
+       crossDomain: false
+   })
+});

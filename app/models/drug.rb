@@ -29,7 +29,7 @@ class Drug < ActiveRecord::Base
   end
 
   def self.search_by_more_attr_texticle(query)
-    params = { name: query, label: query, form: query, usage: query }
+    params = {name: query, label: query, form: query, usage: query}
     should_be_exclusive = false
     basic_search(params, should_be_exclusive)
   end
@@ -61,7 +61,7 @@ class Drug < ActiveRecord::Base
 
       str_to_exec += param_string[i]
       str_to_exec += '|' if i < (parlen - 1)
-      str_to_exec += ')%'
+      str_to_exec += ')%' if i == (parlen - 1)
       i = i + 1
     end
 
@@ -85,7 +85,7 @@ class Drug < ActiveRecord::Base
 
     # SQL Select
     Drug.joins('JOIN clicks ON clicks.drug_id = drugs.id')
-      .where('label SIMILAR TO ? OR usage SIMILAR TO ?', str_to_exec, str_to_exec).order('clicks.no_of_clicks DESC')
+    .where('label SIMILAR TO ? OR usage SIMILAR TO ?', str_to_exec, str_to_exec).order('clicks.no_of_clicks DESC')
   end
 
 end

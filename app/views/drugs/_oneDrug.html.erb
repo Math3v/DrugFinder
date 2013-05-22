@@ -1,0 +1,114 @@
+<%#-- provide(:title, 'Vyhľadávanie') %>
+
+<% if signed_in? && current_user.admin? %>
+    @admin = true
+    else
+    @admin = false
+<% end %>
+
+<br><br>
+<div class="foundResults">
+
+  <p>
+
+  <div class="cast name">
+    <% if !@drug.sukl_name.empty? %>
+        <%= @drug.sukl_name %>
+    <% else %>
+        Bez mena: <%= @drug.code %>
+    <% end %>
+  </div>
+  </p>
+
+  <p>
+    <% if !@drug.label.nil? %>
+      <div class="cast popis"><b>Popis: </b><%= @drug.label if defined? @drug.label %></div>
+  <% end %>
+  </p>
+
+  <p>
+    <% if !@drug.usage.nil? %>
+      <div class="cast usage"><b>Ako používať liek? </b><%= @drug.usage if defined? @drug.usage %></div>
+  <% end %>
+  </p>
+
+  <li id="menu" class="dropdown">
+    <a href="dropdown-menu more" class="dropdown-toggle" data-toggle="dropdown" onmouseover="$(this).next().slideDown()" onmouseout="$(this).next().slideUp()">
+      Viac<b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu more">
+
+      <% if !@drug.sukl_name.nil? %>
+          <div class="cast sukl_name"><b>ŠÚKL meno: </b><%= @drug.sukl_name if defined? @drug.sukl_name %></div>
+      <% end %>
+
+      <div class="cast code"><b>Kód: </b><%= @drug.code if defined? @drug.code %></div>
+      <div class="cast id"><b>ID: </b><%= @drug.id if defined? @drug.id %></div>
+
+      <% if !@drug.form.nil? %>
+          <div class="cast form"><b>Forma: </b><%= @drug.form if defined? @drug.form %></div>
+      <% end %>
+
+      <% if !@drug.holder_id.nil? %>
+          <div class="cast holder"><b>Držiteľ: </b><%= @drug.holder.name_clean if !@drug.holder.nil? %></div>
+      <% end %>
+
+      <% if !@drug.supplier_id.nil? %>
+          <div class="cast supplier"><b>Dodávateľ: </b><%= @drug.supplier.name_clean if !@drug.supplier.nil? %>
+          </div>
+      <% end %>
+
+      <% if !@drug.producer_id.nil? %>
+          <div class="cast producer>"><b>Výrobca: </b><%= @drug.producer.name_clean if !@drug.producer.nil? %>
+          </div>
+      <% end %>
+
+      </table>
+    </ul>
+  </li>
+
+  <p>
+    <% if @admin %>
+        <%= link_to 'Edit', edit_drug_path(@drug) %>  |
+        <%= link_to 'Destroy', @drug, method: :delete, data: {confirm: 'Are you sure?'} %>
+    <% end %>
+  </p>
+
+  <br>
+</div>
+
+<div class="storeButton">
+  <% @drug_name=@drug.name
+     @drug_name=@drug_name.split(' ')[0]
+     @site_url='http://eshop.zdravmat.sk/vyhladavanie?orderby=position&orderway=desc&search_query='.concat(@drug_name) %>
+
+  <p class="cast store button" id="storeButton">
+    <%= link_to('Koľko stojí '.concat(@drug_name).concat(' ?'), "#{@site_url}", :onclick => "incr_clicks(#{@drug.id})") %>
+  </p>
+
+</div>
+
+<%= link_to 'Späť', :back %>
+
+<script>
+    $(document).ready(function () {
+        if ("<%= @param %>".length > 3) {
+            var re = new RegExp("<%= @param %>", "gi");
+            var y = $('.foundResults').not('#storeButton');
+
+            y.each(function () {
+
+                this.innerHTML = this.innerHTML.toString().replace(re,
+                        '<span style=" \
+                                 text-transform: capitalize;\
+                                 padding: 2px 10px 2px 10px;\
+                                 text-transform: capitalize; \
+                                 background-color: #a9d75b; \
+                                 border: 0px solid; \
+                                 -moz-border-radius: 5px; \
+                                 border-radius: 5px;\
+                                 "><b>$&</b></span>');
+            })
+        }
+    })
+</script>

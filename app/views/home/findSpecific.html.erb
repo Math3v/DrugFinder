@@ -1,0 +1,14 @@
+<% provide(:title, 'Vyhľadávanie') %>
+
+<div class="center hero-unit">
+  <img src="assets/PharmLogo.png" id="zdraviePNG">
+
+  <%= form_tag drugs_path, method: :get do %>
+
+      <p>
+        <%= text_field_tag(:q, '', class: 'home_search_input', :placeholder => 'Zadajte názov lieku, účinnú látku, príznaky, ... Príklad: bolesti brucha') %>
+        <%= submit_tag 'Hľadaj', class: 'btn btn-large btn-primary' %>
+      </p>
+
+  <% end %>
+</div>

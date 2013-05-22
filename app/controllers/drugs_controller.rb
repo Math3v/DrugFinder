@@ -60,11 +60,11 @@ class DrugsController < ApplicationController
   # GET /drugs
   # GET /drugs.json
   def index
-    @drug = Drug.all
+    @drug = Drug.where('name ILIKE ?', "%#{params[:q]}%")
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @drugs }
+      format.json { render json: @drug.map(&:attributes) }
     end
   end
 

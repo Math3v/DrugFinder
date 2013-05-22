@@ -4,7 +4,7 @@ describe DrugsController do
   describe "routing" do
 
     it "routes to #index" do
-      get("/drugs").should route_to("drugs#index")
+      get("/drugs").should route_to("drugs#show")
     end
 
     it "routes to #new" do
