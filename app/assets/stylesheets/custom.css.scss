@@ -12,10 +12,6 @@ $grayMediumLight: #eaeaea;
 
 /* universal */
 
-html:before {
-
-}
-
 html {
   overflow-y: scroll;
 }
@@ -129,6 +125,13 @@ textarea {
    background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
    background-color:#dfdfdf;
+
+  a:hover{
+    text-decoration: underline !important;
+    color: black !important;
+    background-color: #dfdfdf !important;
+  }
+
  }
 
 .cast.store.button:active {
@@ -247,6 +250,7 @@ p {
   a {
     color: red !important;
     text-align: center;
+    text-decoration: underline;
   }
 
 }
@@ -255,7 +259,6 @@ p {
 
   a:hover{
     text-decoration: underline !important;
-    color: red;
   }
 
 }
@@ -318,11 +321,13 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
-  color: $grayLight;
+  color: black;
   a {
-    color: $gray;
+    color: black;
     &:hover { 
-      color: $grayLight;
+      color: black;
+      background-color: white;
+      text-decoration: underline;
     }
   }  
   small { 
