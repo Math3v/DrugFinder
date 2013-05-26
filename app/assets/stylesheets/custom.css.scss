@@ -170,6 +170,16 @@ map > area:click {
   text-align: center;
 }
 
+.submit:hover {
+
+  a:hover{
+    text-decoration: underline !important;
+    background-color: white;
+    color: black;
+  }
+
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -223,6 +233,31 @@ p {
     margin: 0 0 30px 100px;
   }
   color: black;
+}
+
+/* Reminder */
+
+.reminder {
+
+  font-size: 30px;
+  font-family: arial;
+  font: bold;
+  color: red;
+
+  a {
+    color: red !important;
+    text-align: center;
+  }
+
+}
+
+.reminder:hover {
+
+  a:hover{
+    text-decoration: underline !important;
+    color: red;
+  }
+
 }
 
 /* header */

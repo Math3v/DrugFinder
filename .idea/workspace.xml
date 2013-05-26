@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/PharmLogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/drugs/_oneDrug.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/findSpecific.html.erb" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../DrugFinder/.idea/.name" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../DrugFinder/.idea/DrugFinder.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../DrugFinder/.idea/encodings.xml" afterPath="" />
@@ -14,7 +11,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../DrugFinder/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../DrugFinder/.idea/workspace.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../DrugFinder/my_script.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/drugs/find_specific.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/drugs/spec_search.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/searchers/search.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/suppliers/show.html.erb" afterPath="" />
@@ -109,49 +105,28 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/assets/javascripts/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/assets/stylesheets/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/plugins/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statistics/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/statistics/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/drug.rb" afterPath="$PROJECT_DIR$/app/models/drug.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/routing/drugs_routing_spec.rb" afterPath="$PROJECT_DIR$/spec/routing/drugs_routing_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/drugs_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/drugs_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/holder.rb" afterPath="$PROJECT_DIR$/app/models/holder.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/index.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statistics/index.html.erb" afterPath="$PROJECT_DIR$/app/views/statistics/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/show.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statistics/stats.erb" afterPath="$PROJECT_DIR$/app/views/statistics/stats.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drug_finder_db.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/show.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369169690503" ignored="false" />
-    <file path="/index.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369225216309" ignored="false" />
+    <file path="/index.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369571562403" ignored="false" />
     <file path="/find.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1364995879496" ignored="false" />
     <file path="/drugs_controller.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369227624134" ignored="false" />
     <file path="/drug.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1368616709030" ignored="false" />
     <file path="/routes.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369223994940" ignored="false" />
     <file path="/find.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367255822069" ignored="false" />
-    <file path="/Dummy.txt" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369223746314" ignored="false" />
+    <file path="/Dummy.txt" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369560997898" ignored="false" />
     <file path="/application.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369167649798" ignored="false" />
     <file path="/_footer.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365253022519" ignored="false" />
     <file path="/_header.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369169229061" ignored="false" />
     <file path="/sessions_controller.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365019835770" ignored="false" />
     <file path="/sessions_helper.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365019886168" ignored="false" />
-    <file path="/custom.css.scss" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369225603821" ignored="false" />
+    <file path="/custom.css.scss" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369571792623" ignored="false" />
     <file path="/new.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369226526516" ignored="false" />
     <file path="/edit.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365084083615" ignored="false" />
     <file path="/about.html" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365107618071" ignored="false" />
@@ -189,7 +164,7 @@
     <file path="/bootstrap.css" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366103530766" ignored="false" />
     <file path="/_drug.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367655820738" ignored="false" />
     <file path="/development.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366197949559" ignored="false" />
-    <file path="/body.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369228473568" ignored="false" />
+    <file path="/body.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369571846980" ignored="false" />
     <file path="/_body.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367690263199" ignored="false" />
     <file path="/CSS Fragment (_drug.html.erb:3595).css" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367144291825" ignored="false" />
     <file path="/static_pages_spec.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369228614722" ignored="false" />
@@ -238,16 +213,16 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="body.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/body.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="43" selection-start="4960" selection-end="4960" vertical-scroll-proportion="-16.875">
+            <state line="41" column="14" selection-start="5225" selection-end="5225" vertical-scroll-proportion="0.8090909">
               <folding />
             </state>
           </provider>
@@ -271,10 +246,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drugs_routing_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="drugs_routing_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/routing/drugs_routing_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="47" selection-start="152" selection-end="152" vertical-scroll-proportion="0.15332198">
+            <state line="6" column="47" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="10" selection-start="72" selection-end="72" vertical-scroll-proportion="-1.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="177" column="17" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -289,38 +282,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1365016479510" expanded="true" signature="90:322" placeholder="..." />
-                <marker date="1365016479510" expanded="true" signature="202:311" placeholder="..." />
-                <marker date="1365016479510" expanded="true" signature="357:425" placeholder="..." />
-                <marker date="1365016479510" expanded="true" signature="447:517" placeholder="..." />
-                <marker date="1365016479510" expanded="true" signature="539:610" placeholder="..." />
-                <marker date="1365016479510" expanded="true" signature="634:663" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="255" selection-end="255" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="81" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,16 +315,16 @@
         <option value="$PROJECT_DIR$/app/views/drugs/find_specific.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/home/findSpecific.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/drugs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
         <option value="$PROJECT_DIR$/spec/requests/static_pages_spec.rb" />
         <option value="$PROJECT_DIR$/spec/requests/drugs_spec.rb" />
         <option value="$PROJECT_DIR$/spec/routing/drugs_routing_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
       </list>
     </option>
   </component>
@@ -370,8 +336,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1366" />
+    <option name="width" value="1301" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -422,7 +389,80 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assets" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.AssetsTopLevelFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drug_finder_db" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ApplicationFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApplicationController" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.ControllerClassNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -881,95 +921,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Models" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ModelsFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assets" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.AssetsTopLevelFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ControllersFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drug_finder_db" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.folders.ApplicationFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApplicationController" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.ControllerClassNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="appearance" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spec/requests" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1369,14 +1336,14 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.MyRspec" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Production: drug_finder_db" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Development: drug_finder_db" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="5" class="java.lang.String" itemvalue="IRB console.Rails console: drug_finder_db" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="7" class="java.lang.String" itemvalue="Ruby.drugs_controller" />
+      <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: drug_finder_db" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.drugs_controller" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.MyRspec" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Production: drug_finder_db" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Development: drug_finder_db" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.spec" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -1433,15 +1400,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1366" height="744" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1588146" sideWeight="0.6713396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16147083" sideWeight="0.6713396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39719626" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1450,6 +1416,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1529,58 +1496,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="415" selection-end="415" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="14" selection-start="3078" selection-end="3078" vertical-scroll-proportion="-13.225806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="50" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="50" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1365016479510" expanded="true" signature="90:322" placeholder="..." />
-            <marker date="1365016479510" expanded="true" signature="202:311" placeholder="..." />
-            <marker date="1365016479510" expanded="true" signature="357:425" placeholder="..." />
-            <marker date="1365016479510" expanded="true" signature="447:517" placeholder="..." />
-            <marker date="1365016479510" expanded="true" signature="539:610" placeholder="..." />
-            <marker date="1365016479510" expanded="true" signature="634:663" placeholder="..." />
+            <marker date="1365016479510" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365016479510" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365016479510" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365016479510" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365016479510" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1365016479510" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="255" selection-end="255" vertical-scroll-proportion="-5.625">
+        <state line="9" column="36" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1588,9 +1535,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="81" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1615,13 +1560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/body.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="43" selection-start="4960" selection-end="4960" vertical-scroll-proportion="-16.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/requests/static_pages_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="36" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
@@ -1638,7 +1576,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/routing/drugs_routing_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="152" selection-end="152" vertical-scroll-proportion="0.15332198">
+        <state line="6" column="47" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="10" selection-start="72" selection-end="72" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="17" selection-start="3025" selection-end="3025" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/body.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="14" selection-start="5225" selection-end="5225" vertical-scroll-proportion="0.8090909">
           <folding />
         </state>
       </provider>
