@@ -21356,3 +21356,342 @@ Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.5ms)
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  Rendered holders/show.html.erb (18.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSupplier Load (20.0ms)[0m  SELECT "suppliers".* FROM "suppliers" ORDER BY "suppliers"."id" DESC LIMIT 1
+  Rendered suppliers/_form.html.erb (324.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mProducer Load (1.2ms)[0m  [1mSELECT "producers".* FROM "producers" ORDER BY "producers"."id" DESC LIMIT 1[0m
+  Rendered producers/_form.html.erb (15.3ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered users/_form.html.erb (7.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/human_body" for 127.0.0.1 at 2013-05-26 14:48:45 +0200
+Processing by StaticPagesController#body as HTML
+Compiled jquery.tokeninput.js  (1ms)  (pid 10752)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (29.4ms)
+  Rendered layouts/_footer.erb (2.0ms)
+Completed 200 OK in 139ms (Views: 136.3ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+Started GET "/find_suppliers" for 127.0.0.1 at 2013-05-26 14:48:45 +0200
+Processing by SuppliersController#find_suppliers as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (2.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/find_holders" for 127.0.0.1 at 2013-05-26 14:48:45 +0200
+Processing by HoldersController#find_holders as HTML
+  [1m[35mUser Load (3.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (5.5ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 3.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/about" for 127.0.0.1 at 2013-05-26 14:48:45 +0200
+Processing by StaticPagesController#about as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (2.8ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/find_producers" for 127.0.0.1 at 2013-05-26 14:48:45 +0200
+Processing by ProducersController#find_producers as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (2.4ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/contact" for 127.0.0.1 at 2013-05-26 14:48:45 +0200
+Processing by StaticPagesController#contact as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (4.7ms)
+  Rendered layouts/_footer.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 21.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/signin" for 127.0.0.1 at 2013-05-26 14:48:46 +0200
+Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (2.5ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/stats" for 127.0.0.1 at 2013-05-26 14:48:46 +0200
+Processing by StatisticsController#stats as HTML
+  [1m[36mDrug Load (217.2ms)[0m  [1mSELECT "drugs".* FROM "drugs" [0m
+  [1m[35mSupplier Load (3.2ms)[0m  SELECT "suppliers".* FROM "suppliers" 
+  [1m[36mHolder Load (17.6ms)[0m  [1mSELECT "holders".* FROM "holders" [0m
+  [1m[35mProducer Load (1.8ms)[0m  SELECT "producers".* FROM "producers" 
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (32.7ms)[0m  SELECT COUNT(*) FROM "drugs" WHERE (usage IS NOT NULL)
+  [1m[36m (36.1ms)[0m  [1mSELECT COUNT(*) FROM "drugs" WHERE (label IS NOT NULL)[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (3.5ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 1244ms (Views: 9.6ms | ActiveRecord: 309.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mHolder Load (0.5ms)[0m  [1mSELECT "holders".* FROM "holders" ORDER BY "holders"."id" DESC LIMIT 1[0m
+  Rendered holders/_form.html.erb (6.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mHolder Load (0.4ms)[0m  SELECT "holders".* FROM "holders" ORDER BY "holders"."id" DESC LIMIT 1
+  Rendered holders/_form.html.erb (6.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/drugs/wide_search?q=paralen" for 127.0.0.1 at 2013-05-26 14:48:47 +0200
+Processing by DrugsController#wide_search as HTML
+  Parameters: {"q"=>"paralen"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "drugs" WHERE (to_tsvector('unaccent_simple', "drugs"."name"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."label"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."form"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."usage"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text))
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "drugs" WHERE (to_tsvector('unaccent_simple', "drugs"."name"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."label"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."form"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."usage"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text))[0m
+  [1m[35mDrug Load (9.1ms)[0m  SELECT "drugs".*, ts_rank(to_tsvector('unaccent_simple', "drugs"."name"::text), plainto_tsquery('unaccent_simple', 'paralen'::text)) + ts_rank(to_tsvector('unaccent_simple', "drugs"."label"::text), plainto_tsquery('unaccent_simple', 'paralen'::text)) + ts_rank(to_tsvector('unaccent_simple', "drugs"."form"::text), plainto_tsquery('unaccent_simple', 'paralen'::text)) + ts_rank(to_tsvector('unaccent_simple', "drugs"."usage"::text), plainto_tsquery('unaccent_simple', 'paralen'::text)) AS "rank5427955e" FROM "drugs" WHERE (to_tsvector('unaccent_simple', "drugs"."name"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."label"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."form"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text) OR to_tsvector('unaccent_simple', "drugs"."usage"::text) @@ plainto_tsquery('unaccent_simple', 'paralen'::text)) ORDER BY "rank5427955e" DESC LIMIT 30 OFFSET 0
+  [1m[36mSupplier Load (0.6ms)[0m  [1mSELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" IN (14)[0m
+  [1m[35mHolder Load (0.6ms)[0m  SELECT "holders".* FROM "holders" WHERE "holders"."id" IN (4410, 751, 3831, 1423, 3553, 4430, 183, 314, 263)
+  [1m[36mProducer Load (0.4ms)[0m  [1mSELECT "producers".* FROM "producers" WHERE "producers"."id" IN (389)[0m
+  Rendered drugs/_drug.html.erb (282.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (1.9ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 295ms (Views: 280.1ms | ActiveRecord: 12.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/holders/find?name=boiron" for 127.0.0.1 at 2013-05-26 14:48:47 +0200
+Processing by HoldersController#find as HTML
+  Parameters: {"name"=>"boiron"}
+  [1m[36m (41.8ms)[0m  [1mSELECT COUNT(*) FROM "holders" WHERE (name_clean ILIKE 'boiron%')[0m
+  [1m[35mHolder Load (9.7ms)[0m  SELECT "holders".* FROM "holders" WHERE (name_clean ILIKE 'boiron%')
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered producers/_organization.html.erb (56.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (1.8ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 94ms (Views: 40.7ms | ActiveRecord: 51.9ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/suppliers/find?name=boiron" for 127.0.0.1 at 2013-05-26 14:48:48 +0200
+Processing by SuppliersController#find as HTML
+  Parameters: {"name"=>"boiron"}
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "suppliers" WHERE (name_clean ILIKE 'boiron%')[0m
+  [1m[35mSupplier Load (0.9ms)[0m  SELECT "suppliers".* FROM "suppliers" WHERE (name_clean ILIKE 'boiron%')
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered producers/_organization.html.erb (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 2.2ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/producers/find?producer_name=zentiva" for 127.0.0.1 at 2013-05-26 14:48:48 +0200
+Processing by ProducersController#find as HTML
+  Parameters: {"producer_name"=>"zentiva"}
+  [1m[36m (3.1ms)[0m  [1mSELECT COUNT(*) FROM "producers" WHERE (name_clean ILIKE 'zentiva%')[0m
+  [1m[35mProducer Load (2.9ms)[0m  SELECT "producers".* FROM "producers" WHERE (name_clean ILIKE 'zentiva%')
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered producers/_organization.html.erb (16.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (2.4ms)
+  Rendered layouts/_footer.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 35.3ms | ActiveRecord: 6.8ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/drugs/wide_search?q=abrotanum" for 127.0.0.1 at 2013-05-26 14:48:48 +0200
+Processing by DrugsController#wide_search as HTML
+  Parameters: {"q"=>"abrotanum"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  [1m[36m (99.0ms)[0m  [1mSELECT COUNT(*) FROM "drugs" WHERE (to_tsvector('unaccent_simple', "drugs"."name"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."label"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."form"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."usage"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text))[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "drugs" WHERE (to_tsvector('unaccent_simple', "drugs"."name"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."label"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."form"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."usage"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text))
+  [1m[36mDrug Load (7.2ms)[0m  [1mSELECT "drugs".*, ts_rank(to_tsvector('unaccent_simple', "drugs"."name"::text), plainto_tsquery('unaccent_simple', 'abrotanum'::text)) + ts_rank(to_tsvector('unaccent_simple', "drugs"."label"::text), plainto_tsquery('unaccent_simple', 'abrotanum'::text)) + ts_rank(to_tsvector('unaccent_simple', "drugs"."form"::text), plainto_tsquery('unaccent_simple', 'abrotanum'::text)) + ts_rank(to_tsvector('unaccent_simple', "drugs"."usage"::text), plainto_tsquery('unaccent_simple', 'abrotanum'::text)) AS "ranka1647f3d" FROM "drugs" WHERE (to_tsvector('unaccent_simple', "drugs"."name"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."label"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."form"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text) OR to_tsvector('unaccent_simple', "drugs"."usage"::text) @@ plainto_tsquery('unaccent_simple', 'abrotanum'::text)) ORDER BY "ranka1647f3d" DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSupplier Load (0.7ms)[0m  SELECT "suppliers".* FROM "suppliers" WHERE "suppliers"."id" IN (66)
+  [1m[36mHolder Load (0.8ms)[0m  [1mSELECT "holders".* FROM "holders" WHERE "holders"."id" IN (10)[0m
+  [1m[35mProducer Load (0.4ms)[0m  SELECT "producers".* FROM "producers" WHERE "producers"."id" IN (355)
+  Rendered drugs/_drug.html.erb (129.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (1.6ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 137ms (Views: 26.8ms | ActiveRecord: 108.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered users/_form.html.erb (9.1ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mDrug Load (31.3ms)[0m  SELECT "drugs".* FROM "drugs" ORDER BY "drugs"."id" DESC LIMIT 1
+  Rendered drugs/_form.html.erb (55.6ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mProducer Load (0.5ms)[0m  [1mSELECT "producers".* FROM "producers" ORDER BY "producers"."id" DESC LIMIT 1[0m
+  Rendered producers/_form.html.erb (5.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Started GET "/producers" for 127.0.0.1 at 2013-05-26 14:48:48 +0200
+Processing by ProducersController#index as HTML
+  [1m[35mProducer Load (3.0ms)[0m  SELECT "producers".* FROM "producers" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (2.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 372ms (Views: 342.8ms | ActiveRecord: 3.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/holders" for 127.0.0.1 at 2013-05-26 14:48:49 +0200
+Processing by HoldersController#index as HTML
+  [1m[35mHolder Load (8.7ms)[0m  SELECT "holders".* FROM "holders" 
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (19.0ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 4440ms (Views: 4184.8ms | ActiveRecord: 9.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/suppliers" for 127.0.0.1 at 2013-05-26 14:48:53 +0200
+Processing by SuppliersController#index as HTML
+  [1m[35mSupplier Load (0.8ms)[0m  SELECT "suppliers".* FROM "suppliers" 
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (2.4ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 131ms (Views: 122.5ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/users" for 127.0.0.1 at 2013-05-26 14:48:53 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (2.1ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/human_body" for 127.0.0.1 at 2013-05-26 14:48:53 +0200
+Processing by StaticPagesController#body as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.erb (2.2ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mDrug Load (0.9ms)[0m  [1mSELECT "drugs".* FROM "drugs" ORDER BY "drugs"."id" DESC LIMIT 1[0m
+  Rendered drugs/_form.html.erb (8.6ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/statistics" for 127.0.0.1 at 2013-05-26 14:48:53 +0200
+Processing by StatisticsController#index as HTML
+  [1m[35mStatistic Load (0.4ms)[0m  SELECT "statistics".* FROM "statistics" 
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.erb (3.8ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSupplier Load (0.7ms)[0m  SELECT "suppliers".* FROM "suppliers" ORDER BY "suppliers"."id" DESC LIMIT 1
+  Rendered suppliers/_form.html.erb (7.5ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m

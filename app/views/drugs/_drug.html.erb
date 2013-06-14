@@ -9,7 +9,7 @@
 <div class="pocetVysledkov">
 
   <b><h5>Počet
-    výsledkov:  <%= @drug.total_entries if !@drug.nil? %>&nbsp; &nbsp; &nbsp; <%= link_to 'Naspäť', :back %></h5></b>
+    výsledkov:  <%= @drug.total_entries if !@drug.nil? %>&nbsp; &nbsp; &nbsp; <%= link_to 'Naspäť', :back, id: :'backLink' %></h5></b>
 
   <p><b><%= @param %></b></p>
 
@@ -56,9 +56,9 @@
           <% end %>
           </p>
 
-          <li id="menu" class="dropdown">
-            <a href="dropdown-menu more" class="dropdown-toggle" data-toggle="dropdown" onmouseover="$(this).next().slideDown()" onmouseout="$(this).next().slideUp()">
-              Viac<b class="caret"></b>
+          <div id="menu" class="dropdown">
+            <a href="dropdown-menu more" class="dropdown-toggle" id="moreLink" data-toggle="dropdown" onmouseover="$(this).next().slideDown()" onmouseout="$(this).next().slideUp()">
+              Viac o lieku
             </a>
             <ul class="dropdown-menu more">
 
@@ -89,7 +89,7 @@
 
               </table>
             </ul>
-          </li>
+          </div>
 
           <p>
             <% if @admin %>
@@ -114,16 +114,25 @@
 
     <% end %>
 
-    <%= link_to 'Späť', :back %>
-
     <%= will_paginate @drug %>
 
 <% end %>
 
 <script>
     $(document).ready(function () {
-        if ("<%= @param %>".length > 3) {
-            var re = new RegExp("<%= @param %>", "gi");
+
+        console.log(location.href);
+        var url = location.href;
+
+        if(url.search('wide_search') > 0){
+            var reg = new RegExp('\\+', "gi");
+
+            var param = url.slice(url.search('q=') + 2).replace(reg, ' ');
+            console.log(param);
+            param = param.slice(0, param.search('&'));
+            console.log(param);
+
+            var re = new RegExp(param, "gi");
             var y = $('.foundResults').not('#storeButton');
 
             y.each(function () {
@@ -133,12 +142,52 @@
                                  text-transform: capitalize;\
                                  padding: 2px 10px 2px 10px;\
                                  text-transform: capitalize; \
-                                 background-color: #a9d75b; \
+                                 background-color: #87d174; \
                                  border: 0px solid; \
                                  -moz-border-radius: 5px; \
                                  border-radius: 5px;\
                                  "><b>$&</b></span>');
             })
+
+        }
+        else if(url.search('body_clicked_search') > 0){
+            var m = url.match(/\d+/g);
+
+            for(var i = 0; i < m.length; i++){
+               if(m[i] == 5) { highlight('hlav.') }
+               if(m[i] == 6) { highlight('ucha'); highlight('uší'); highlight('uši') }
+               if(m[i] == 3) { highlight('\\bnos.\\b'); highlight('nozdier') }
+               if(m[i] == 1) { highlight('\\boka\\b'); highlight('\\boč.\\b'); highlight('viečok'); highlight('viečku'); }
+               if(m[i] == 4) { highlight('\\bzubov\\b'); highlight('\\zub\\b'); highlight('\\bjazyk.\\b'); highlight('\\bmandl.\\b'); }
+               if(m[i] == 8) { highlight('\\bmandl.'); highlight('\\bkrk.\\b'); highlight('pažeráka'); highlight('krčné'); }
+               if(m[i] == 9) { highlight('\\bramen....'); highlight('\\bramien\\b'); }
+               if(m[i] == 11) { highlight('\\bhrudn'); highlight('\\bprsia\\b'); highlight('\\bsrdc'); highlight('\\bbradavk'); }
+               if(m[i] == 16) { highlight('\\bbruch'); highlight('\\bru.n'); highlight('žalúd'); }
+               if(m[i] == 12 || m[i] == 14) { highlight('svalov'); }
+               if(m[i] == 18) { highlight('dlan'); }
+               if(m[i] == 17) { highlight('penis'); highlight('mieška'); highlight('semenn'); highlight('vaječní'); highlight('pošv.'); }
+               if(m[i] == 20) { highlight('svalov'); highlight('stehn'); highlight('stehien'); highlight('stehenn'); }
+               if(m[i] == 22) { highlight('kolen'); highlight('kolien'); }
+               if(m[i] == 24) { highlight('nôh'); highlight('píštala'); highlight('píštaly'); }
+               if(m[i] == 26) { highlight('chodidiel'); highlight('chodidl'); }
+            }
+
+
         }
     })
+
+function highlight(param){
+
+    var re = new RegExp(param, "gi");
+    var y = $('.foundResults').not('#storeButton');
+
+    y.each(function () {
+
+        this.innerHTML = this.innerHTML.toString().replace(re,
+                '<span style=" \
+                         text-transform: capitalize; \
+                         background-color: #87d174; \
+                         "><b>$&</b></span>');
+    })
+}
 </script>

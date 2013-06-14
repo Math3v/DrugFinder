@@ -2,10 +2,20 @@
   <h1><b>Kliknite tam, kde Vás to bolí...</b></h1>
 </div>
 
+<div class="submit">
+  <%= submit_tag 'Hľadaj', class: 'btn btn-large btn-primary' %>
+</div>
+
 <img src="assets/Human-Body-450x1187.jpg" alt="HumanBody" usemap="#humanbodymap" id="humanBodyPicture">
 <img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart1">
 <img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart2">
 <img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart3">
+<img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart4">
+<img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart5">
+<img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart6">
+<img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart7">
+<img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart8">
+<img src="assets/red-orb.png" height="40px" width="40px" alt="selectedPart" id="selectedPart9">
 
 <map class="map" id="humanBodyPicture" name="humanbodymap">
   <area shape="poly" alt="" title="Oko" coords="213,81,206,76,197,79,194,82,203,82,203,82" href="" target="" data-body="1" />
@@ -39,5 +49,5 @@
 </map>
 
 <div class="submit">
-    <a href="#"><h3>Čo mi pomôže?</h3></a>
+    <%= submit_tag 'Hľadaj', class: 'btn btn-large btn-primary' %>
 </div>

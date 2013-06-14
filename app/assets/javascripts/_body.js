@@ -15,28 +15,30 @@ $(document).ready(
         $("map area").on("click", function(event){
             event.preventDefault();
             var data = $(this).data('body');
-
-
-            if(array_clicks.length >= 3){
-                alert("Nemôžete zvoliť viac ako 3 časti tela.");
-                return;
-            }
+            var del  = false;
 
             for(var i = 0; i < array_clicks.length; i++){
                 if(data == array_clicks[i]){
-                    alert("Nemôžete zvoliť to isté znovu.");
-                    return;
+                    console.log('Idem hide ' + (i + 1));
+                    $('#selectedPart'.concat((i + 1).toString())).hide();
+                    //array_clicks.splice(i, 1);
+                    delete array_clicks[i];
+                    del = true;
                 }
             }
 
-            window.array_clicks[window.array_clicks.length] = data;
-            $('#selectedPart'.concat(array_clicks.length.toString())).css({
-                                   'left': event.pageX - 20,
-                                   'top': event.pageY - 20,
-                                   'display': 'block',
-                                   'position': 'absolute',
-                                   'z-index': '50'
-            });
+            if(del == false){
+                window.array_clicks[window.array_clicks.length] = data;          //Add click to array
+                $('#selectedPart'.concat(array_clicks.length.toString())).css({  //Display red dot
+                                       'left': event.pageX - 20,
+                                       'top': event.pageY - 20,
+                                       'display': 'block',
+                                       'position': 'absolute',
+                                       'z-index': '50'
+                });
+            }
+            //DEBUG
+            console.log(array_clicks);
     });
 
 });
@@ -48,8 +50,17 @@ $(document).ready(
         $('img[usemap]').maphilight();
         $('.submit').live('click', function(ev) {
         var clicks = "";
-        for(var i = 0; i < array_clicks.length; i++){
-            if(i == (array_clicks.length -1)){
+        var len = array_clicks.length;
+        var empty = true;
+
+        for(var i = 0; i < len; i++){
+            if(typeof array_clicks[i] == 'undefined'){
+                continue;
+            }
+
+            empty = false;
+
+            if(i == (len - 1)){
                 clicks = clicks + "q[]=" + array_clicks[i]
             }
             else{
@@ -57,9 +68,9 @@ $(document).ready(
             }
         };
 
-        if(array_clicks.length < 1){
-            alert("Musíte kliknúť na obrázok!");
-            return;
+        if(empty){
+           alert('Musíte kliknúť na obrázok!')
+           return;
         }
 
         $.ajax({

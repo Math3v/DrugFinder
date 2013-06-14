@@ -36,13 +36,34 @@ textarea {
 }
 
  /* _drug  */
+
+#moreLink {
+  color: black;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+#moreLink:hover {
+  background-color: #87d174 !important;
+}
+
+#backLink {
+  text-decoration: underline !important;
+  background-color: #87d174;
+  color: black;
+}
+
+#backLink:hover {
+
+}
+
 .pocetVysledkov {
   border-radius: 20px;
-  background-color: #a9d75b;
+  background-color: #87d174;
   padding: 15px 15px 15px 15px;
   margin-bottom: 30px;
 }
-
+ /*
 .foundResults:nth-of-type(even) {
   border-radius: 20px;
   background-color: #a9d75b;
@@ -50,8 +71,8 @@ textarea {
   margin-bottom: 10px;
   margin-top: 20px
 }
-
-.foundResults:nth-of-type(odd) {
+*/
+.foundResults {
   border-radius: 20px;
   background-color: #87d174;
   padding: 15px 15px 15px 15px;
@@ -69,7 +90,7 @@ textarea {
 
 .cast.popis {
 
-  background-color: #fffd6c;
+  //background-color: #fffd6c;
   border-radius: 15px;
   padding: 5px 5px 5px 5px;
 
@@ -77,7 +98,7 @@ textarea {
 
 .cast.usage {
 
-  background-color: #a5e6cf;
+  //background-color: #a5e6cf;
   border-radius: 15px;
   padding: 5px 5px 5px 5px;
 
@@ -159,6 +180,36 @@ textarea {
 }
 
 #selectedPart3 {
+
+  display: none;
+}
+
+#selectedPart4 {
+
+  display: none;
+}
+
+#selectedPart5 {
+
+  display: none;
+}
+
+#selectedPart6 {
+
+  display: none;
+}
+
+#selectedPart7 {
+
+  display: none;
+}
+
+#selectedPart8 {
+
+  display: none;
+}
+
+#selectedPart9 {
 
   display: none;
 }

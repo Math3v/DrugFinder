@@ -31,7 +31,6 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:drugdb</jdbc-url>
       <user-name>matej</user-name>
-      <user-password>df96df8fdf97dfefdfe4dffcdff1df8ddfe5dffadfefdfe4dff9dfe2dfe3dfecdffedff5dffadfe5dff9dffedfeddff8dfefdff9dffbdfe6dff5dfeedfe8dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8fdf94</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
