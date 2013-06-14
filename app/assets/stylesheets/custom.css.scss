@@ -163,10 +163,21 @@ textarea {
  /* human body */
 #humanBodyPicture {
 
+  position: relative;
+  left: -10px;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
 
+}
+
+.bodyPictureDisplayer {
+  position: relative;
+  margin-right: 2cm;
+  float: right;
+  color: blue;
+  font-size: 20px !important;
+  font-family: bold !important;
 }
 
 #selectedPart1 {

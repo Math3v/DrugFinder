@@ -19,15 +19,15 @@ $(document).ready(
 
             for(var i = 0; i < array_clicks.length; i++){
                 if(data == array_clicks[i]){
-                    console.log('Idem hide ' + (i + 1));
+                    deleteRow('dataTable', i);
                     $('#selectedPart'.concat((i + 1).toString())).hide();
-                    //array_clicks.splice(i, 1);
                     delete array_clicks[i];
                     del = true;
                 }
             }
 
             if(del == false){
+                pridajRiadok('dataTable', data);
                 window.array_clicks[window.array_clicks.length] = data;          //Add click to array
                 $('#selectedPart'.concat(array_clicks.length.toString())).css({  //Display red dot
                                        'left': event.pageX - 20,
@@ -37,8 +37,6 @@ $(document).ready(
                                        'z-index': '50'
                 });
             }
-            //DEBUG
-            console.log(array_clicks);
     });
 
 });
@@ -83,7 +81,59 @@ $(document).ready(
 
 });
 
+function pridajRiadok(tableID, data){
+    var param = "";
 
+    if(data == 5) { param = "Hlava"; }
+    else if(data == 6) { param = "Ucho"; }
+    else if(data == 3) { param = "Nos"; }
+    else if(data == 1) { param = "Oko"; }
+    else if(data == 4) { param = "Ústa, zuby"; }
+    else if(data == 8) { param = "Krk"; }
+    else if(data == 9) { param = "Rameno"; }
+    else if(data == 11) { param = "Hrudník"; }
+    else if(data == 16) { param = "Brucho, žalúdok"; }
+    else if(data == 12 || data == 14) { param = "Ruka"; }
+    else if(data == 18) { param = "Dlaň"; }
+    else if(data == 17) { param = "Slabiny"; }
+    else if(data == 20) { param = "Stehno"; }
+    else if(data == 22) { param = "Koleno"; }
+    else if(data == 24) { param = "Noha, píštala"; }
+    else if(data == 26) { param = "Chodidlo"; }
+
+    addRow(tableID, param);
+}
+
+
+function addRow(tableID, text) {
+
+    var table = document.getElementById(tableID);
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+
+    var cell1 = row.insertCell(0);
+    var element1 = document.createElement("tr");
+    var text = document.createTextNode(text);
+    element1.type = "text";
+    element1.appendChild(text);
+    cell1.appendChild(element1);
+
+
+
+}
+
+function deleteRow(tableID, index) {
+
+    try {
+
+        var table = document.getElementById(tableID);
+        table.deleteRow(index + 1);
+
+    }catch(e) {
+
+    }
+}
 
 
 /*======================MAPHILIGHT============================*/

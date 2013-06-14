@@ -121,16 +121,13 @@
 <script>
     $(document).ready(function () {
 
-        console.log(location.href);
         var url = location.href;
 
         if(url.search('wide_search') > 0){
             var reg = new RegExp('\\+', "gi");
 
             var param = url.slice(url.search('q=') + 2).replace(reg, ' ');
-            console.log(param);
             param = param.slice(0, param.search('&'));
-            console.log(param);
 
             var re = new RegExp(param, "gi");
             var y = $('.foundResults').not('#storeButton');

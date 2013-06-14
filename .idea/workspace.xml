@@ -105,17 +105,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/assets/javascripts/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/assets/stylesheets/.gitkeep" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../first_app/vendor/plugins/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/_body.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/_body.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" afterPath="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/drug.rb" afterPath="$PROJECT_DIR$/app/models/drug.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="drug_finder_db.iws" />
@@ -133,7 +127,7 @@
     <file path="/_header.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369169229061" ignored="false" />
     <file path="/sessions_controller.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365019835770" ignored="false" />
     <file path="/sessions_helper.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365019886168" ignored="false" />
-    <file path="/custom.css.scss" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1371234403360" ignored="false" />
+    <file path="/custom.css.scss" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1371245460416" ignored="false" />
     <file path="/new.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369226526516" ignored="false" />
     <file path="/edit.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365084083615" ignored="false" />
     <file path="/about.html" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1365107618071" ignored="false" />
@@ -171,8 +165,8 @@
     <file path="/bootstrap.css" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366103530766" ignored="false" />
     <file path="/_drug.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367655820738" ignored="false" />
     <file path="/development.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1366197949559" ignored="false" />
-    <file path="/body.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1371233432761" ignored="false" />
-    <file path="/_body.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1371235527252" ignored="false" />
+    <file path="/body.html.erb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1371245271090" ignored="false" />
+    <file path="/_body.js" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1371246708946" ignored="false" />
     <file path="/CSS Fragment (_drug.html.erb:3595).css" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367144291825" ignored="false" />
     <file path="/static_pages_spec.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1369228614722" ignored="false" />
     <file path="/search_spec.rb" changelist="9d68c48d-6fe8-4e38-825f-a6ebd37d6f36" time="1367255121868" ignored="false" />
@@ -212,7 +206,7 @@
       <file leaf-file-name="body.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/body.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.75">
+            <state line="9" column="37" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.1666667">
               <folding />
             </state>
           </provider>
@@ -221,19 +215,19 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
+            <state line="179" column="30" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_body.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_body.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/_body.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="25" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
+            <state line="101" column="43" selection-start="3102" selection-end="3102" vertical-scroll-proportion="-0.2851711">
               <folding>
-                <marker date="1371235530494" expanded="true" signature="3546:3552" placeholder="..." />
-                <marker date="1371235530494" expanded="false" signature="8668:8711" placeholder="..." />
+                <marker date="1371246779978" expanded="true" signature="4873:4879" placeholder="..." />
+                <marker date="1371246779978" expanded="true" signature="9995:10038" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -248,14 +242,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_drug.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_drug.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/drugs/_drug.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="79" selection-start="6512" selection-end="6512" vertical-scroll-proportion="0.64143425">
+            <state line="158" column="48" selection-start="4880" selection-end="6412" vertical-scroll-proportion="-9.041667">
               <folding>
-                <marker date="1371243727682" expanded="true" signature="4321:4774" placeholder="..." />
-                <marker date="1371243727682" expanded="true" signature="6785:6895" placeholder="..." />
-                <marker date="1371243727682" expanded="true" signature="6785:6922" placeholder="..." />
+                <marker date="1371244393974" expanded="true" signature="4221:4674" placeholder="..." />
+                <marker date="1371244393974" expanded="true" signature="6685:6795" placeholder="..." />
+                <marker date="1371244393974" expanded="true" signature="6685:6822" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -298,12 +292,12 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/_body.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/_drug.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/models/drug.rb" />
         <option value="$PROJECT_DIR$/app/views/drugs/_drug.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/body.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/_body.js" />
       </list>
     </option>
   </component>
@@ -1463,41 +1457,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_pages/body.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/drugs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="41" selection-start="865" selection-end="865" vertical-scroll-proportion="-2.393536">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/_drug.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="13" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/_body.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="25" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1371235530494" expanded="true" signature="3546:3552" placeholder="..." />
-            <marker date="1371235530494" expanded="false" signature="8668:8711" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1508,13 +1471,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="30" selection-start="3269" selection-end="3269" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/body.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="250" selection-end="250" vertical-scroll-proportion="-2.1666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/drugs/_drug.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="79" selection-start="6512" selection-end="6512" vertical-scroll-proportion="0.64143425">
+        <state line="158" column="48" selection-start="4880" selection-end="6412" vertical-scroll-proportion="-9.041667">
           <folding>
-            <marker date="1371243727682" expanded="true" signature="4321:4774" placeholder="..." />
-            <marker date="1371243727682" expanded="true" signature="6785:6895" placeholder="..." />
-            <marker date="1371243727682" expanded="true" signature="6785:6922" placeholder="..." />
+            <marker date="1371244393974" expanded="true" signature="4221:4674" placeholder="..." />
+            <marker date="1371244393974" expanded="true" signature="6685:6795" placeholder="..." />
+            <marker date="1371244393974" expanded="true" signature="6685:6822" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/_drug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/_body.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="43" selection-start="3102" selection-end="3102" vertical-scroll-proportion="-0.2851711">
+          <folding>
+            <marker date="1371246779978" expanded="true" signature="4873:4879" placeholder="..." />
+            <marker date="1371246779978" expanded="true" signature="9995:10038" placeholder="..." />
           </folding>
         </state>
       </provider>
