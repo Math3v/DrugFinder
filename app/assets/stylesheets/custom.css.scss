@@ -172,12 +172,12 @@ textarea {
 }
 
 .bodyPictureDisplayer {
+
   position: relative;
-  margin-right: 2cm;
+  margin-right: 3cm;
   float: right;
   color: blue;
-  font-size: 20px !important;
-  font-family: bold !important;
+
 }
 
 #selectedPart1 {
@@ -307,10 +307,10 @@ p {
   font-size: 30px;
   font-family: arial;
   font: bold;
-  color: red;
+  color: blue;
 
   a {
-    color: red !important;
+    color: blue !important;
     text-align: center;
     text-decoration: underline;
   }

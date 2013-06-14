@@ -19,7 +19,7 @@ $(document).ready(
 
             for(var i = 0; i < array_clicks.length; i++){
                 if(data == array_clicks[i]){
-                    deleteRow('dataTable', i);
+                    deleteRow('dataTable', data);
                     $('#selectedPart'.concat((i + 1).toString())).hide();
                     delete array_clicks[i];
                     del = true;
@@ -27,7 +27,7 @@ $(document).ready(
             }
 
             if(del == false){
-                pridajRiadok('dataTable', data);
+                addRow('dataTable', dataToText(data));
                 window.array_clicks[window.array_clicks.length] = data;          //Add click to array
                 $('#selectedPart'.concat(array_clicks.length.toString())).css({  //Display red dot
                                        'left': event.pageX - 20,
@@ -81,7 +81,7 @@ $(document).ready(
 
 });
 
-function pridajRiadok(tableID, data){
+function dataToText(data){
     var param = "";
 
     if(data == 5) { param = "Hlava"; }
@@ -101,7 +101,7 @@ function pridajRiadok(tableID, data){
     else if(data == 24) { param = "Noha, píštala"; }
     else if(data == 26) { param = "Chodidlo"; }
 
-    addRow(tableID, param);
+    return param;
 }
 
 
@@ -123,12 +123,18 @@ function addRow(tableID, text) {
 
 }
 
-function deleteRow(tableID, index) {
+function deleteRow(tableID, data) {
 
     try {
-
+        var text = dataToText(data);
         var table = document.getElementById(tableID);
-        table.deleteRow(index + 1);
+
+        for(var i = 0, row; row = table.rows[i]; i++) {
+           if(row.cells[0].innerHTML.search(text) > 0)
+           {
+               table.deleteRow(i);
+           }
+        }
 
     }catch(e) {
 
